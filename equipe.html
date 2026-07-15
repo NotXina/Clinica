@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nossa Equipe &ndash; Ledesma Suarez</title>
+<meta name="description" content="Conhe&ccedil;a a equipe da Cl&iacute;nica Ledesma Suarez &mdash; psic&oacute;logos, psiquiatras e endocrinologistas em Sorocaba/SP.">
+<link rel="icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/psi.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>:root{--pd:#3d1260;--pm:#6b3a8a;--lav:#9b72c0;--lil:#c8a8e0;--lils:#e8d8f4;--lilp:#f7f0ff;--wh:#fefcff;--td:#2a1040;--tm:#5a3a7a;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Jost',sans-serif;background:var(--lilp);color:var(--td);min-height:100vh;}
+.nav{background:linear-gradient(135deg,var(--pd),var(--pm));padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(61,18,96,.3);}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-brand img{width:28px;height:28px;filter:brightness(0) invert(1);opacity:.9;}
+.nav-brand span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;font-weight:400;color:#fff;}
+.nav-links{display:flex;align-items:center;gap:24px;}
+.nav-links a{color:var(--lil);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.04em;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+.nav-cta{background:rgba(255,255,255,.15);color:#fff !important;padding:7px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.25);font-weight:600 !important;transition:background .2s !important;}
+.nav-cta:hover{background:rgba(255,255,255,.25) !important;}
+@media(max-width:600px){
+  .nav-links a:not(.nav-cta){display:none;}
+}
+.hero{background:linear-gradient(155deg,var(--pd) 0%,var(--pm) 60%,var(--lav) 100%);padding:60px 8% 52px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:5%;top:50%;transform:translateY(-50%);width:260px;height:260px;background:url("img/psi.png") center/contain no-repeat;opacity:.05;pointer-events:none;filter:brightness(0) invert(1);}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:#fff;letter-spacing:.02em;margin-bottom:10px;}
+.hero h1 em{font-style:italic;font-weight:400;}
+.hero p{color:var(--lil);font-size:.85rem;max-width:500px;line-height:1.6;}
+.hero-nums{display:flex;gap:32px;margin-top:28px;}
+.hero-num .n{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:#fff;line-height:1;}
+.hero-num .l{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--lil);margin-top:3px;}
+.container{max-width:1200px;margin:0 auto;padding:0 40px;}
+.section{padding:44px 0 8px;}
+.sec-lbl{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--lav);font-weight:600;margin-bottom:20px;}
+.div{height:1px;background:linear-gradient(90deg,transparent,var(--lil),transparent);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;margin-bottom:8px;}
+.mc{background:var(--wh);border-radius:18px;padding:20px;box-shadow:0 2px 16px rgba(107,58,138,.09);display:flex;align-items:flex-start;gap:16px;transition:transform .2s,box-shadow .2s;}
+.mc:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(107,58,138,.16);}
+.mw{flex-shrink:0;}
+.mi{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--lils);display:block;}
+.ma{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:#fff;}
+.mn{flex:1;min-width:0;}
+.mm{font-size:.88rem;font-weight:600;color:var(--td);line-height:1.3;margin-bottom:3px;}
+.mf{font-size:.74rem;color:var(--tm);margin-bottom:2px;}
+.mr{font-size:.68rem;color:var(--lav);font-weight:600;margin-bottom:6px;}
+.ca{display:inline-block;background:var(--lils);color:var(--pm);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:40px;}
+footer{margin-top:52px;padding:40px 8%;background:linear-gradient(135deg,var(--pd),var(--pm));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+footer img.fpsi{width:36px;height:36px;filter:brightness(0) invert(1);opacity:.4;}
+footer p{color:var(--lil);font-size:.74rem;line-height:1.8;}
+footer a{color:var(--lil);text-decoration:none;font-weight:600;}
+footer a:hover{color:#fff;}
+@media(max-width:768px){
+.hero{padding:40px 20px 36px;}.hero-nums{gap:20px;}
+.container{padding:0 16px;}.grid{grid-template-columns:1fr;}
+footer{flex-direction:column;text-align:center;padding:28px 20px;}}</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-brand" href="index.html"><img src="img/psi.png" alt="Ψ"><span>Ledesma Suarez</span></a>
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="blog.html">Publicações</a>
+    <a href="https://wa.me/5515998030909" target="_blank" class="nav-cta">Agendar</a>
+  </div>
+</nav>
+<div class="hero">
+  <h1><em>Nossa Equipe</em></h1>
+  <p>Profissionais especializados comprometidos com o cuidado humanizado e a sa&uacute;de integral de cada paciente.</p>
+  <div class="hero-nums">
+    <div class="hero-num"><div class="n">19</div><div class="l">Profissionais</div></div>
+    <div class="hero-num"><div class="n">4</div><div class="l">Especialidades</div></div>
+    <div class="hero-num"><div class="n">6</div><div class="l">Abordagens</div></div>
+  </div>
+</div>
+<div class="container">
+  <div class="section"><p class="sec-lbl">Responsabilidade T&eacute;cnica</p><div class="grid"><div class="mc"><div class="mw"><div class="ma" style="background:#3d1260;">TL</div></div><div class="mn"><h3 class="mm">Tha&iacute;s Ledesma Schnaidman Suarez</h3><p class="mf">Respons&aacute;vel T&eacute;cnica &ndash; Psicologia</p><p class="mr">CRP 06/160477</p></div></div>
+<div class="mc"><div class="mw"><div class="ma" style="background:#3d1260;">MC</div></div><div class="mn"><h3 class="mm">Maria Clara Schnaidman Suarez</h3><p class="mf">Respons&aacute;vel T&eacute;cnica &ndash; Medicina</p><p class="mr">CRM/SP 51.290</p></div></div></div></div>
+  <div class="div"></div>
+  <div class="section"><p class="sec-lbl">Psic&oacute;logos</p><div class="grid"><div class="mc"><div class="mw"><img src="img/autor-yasmim.png" class="mi" alt="YV"></div><div class="mn"><h3 class="mm">Yasmim do Carmo Vieira</h3><p class="mf">Neuropsic&oacute;loga</p><p class="mr">CRP 06/202107</p><span class="ca">TCC</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-gabriela.png" class="mi" alt="GG"></div><div class="mn"><h3 class="mm">Gabriela Meneghitti Godoy de Souza</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/218745</p><span class="ca">Gestalt</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-jacqueline.png" class="mi" alt="JA"></div><div class="mn"><h3 class="mm">Jacqueline Andrade Figueiredo Silva</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/213359</p><span class="ca">Humanista</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-livia.png" class="mi" alt="LF"></div><div class="mn"><h3 class="mm">L&iacute;via Keila Faustino</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/213664</p><span class="ca">Humanista</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-lucas.png" class="mi" alt="LL"></div><div class="mn"><h3 class="mm">Lucas Labrunetti Zwerkovoski</h3><p class="mf">Psic&oacute;logo</p><p class="mr">CRP 06/201987</p><span class="ca">Psican&aacute;lise</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-mariajose.png" class="mi" alt="MJ"></div><div class="mn"><h3 class="mm">Maria Jos&eacute; Galv&atilde;o Gon&ccedil;alves</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/204866</p><span class="ca">TCC</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-mauro.png" class="mi" alt="MR"></div><div class="mn"><h3 class="mm">Mauro Ribeiro de Freitas</h3><p class="mf">Psic&oacute;logo</p><p class="mr">CRP 06/109757</p><span class="ca">Psican&aacute;lise</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-paula.png" class="mi" alt="PB"></div><div class="mn"><h3 class="mm">Paula Bianca Sacramento</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/229413</p><span class="ca">Psican&aacute;lise</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-tamara.png" class="mi" alt="TC"></div><div class="mn"><h3 class="mm">Tamara Maria Costa</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/213031</p><span class="ca">Fenomenologia</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-thifani.png" class="mi" alt="TS"></div><div class="mn"><h3 class="mm">Thifani Sueiro de Camargo</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/192598</p><span class="ca">Psican&aacute;lise</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-victoria.png" class="mi" alt="VM"></div><div class="mn"><h3 class="mm">Victoria Maria Rainha</h3><p class="mf">Psic&oacute;loga</p><p class="mr">CRP 06/221224</p><span class="ca">Humanista</span></div></div></div></div>
+  <div class="div"></div>
+  <div class="section"><p class="sec-lbl">Psiquiatras</p><div class="grid"><div class="mc"><div class="mw"><img src="img/autor-anderson.png" class="mi" alt="AF"></div><div class="mn"><h3 class="mm">Anderson Santos Fulber</h3><p class="mf">Psiquiatra</p><p class="mr">CRM 227738</p><span class="ca">P&oacute;s em Psiquiatria</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-eraldo.png" class="mi" alt="EF"></div><div class="mn"><h3 class="mm">Eraldo Fernandes dos Santos</h3><p class="mf">Psiquiatra</p><p class="mr">CRM 30341</p><span class="ca">P&oacute;s em Psiquiatria</span></div></div>
+<div class="mc"><div class="mw"><div class="ma" style="background:#4a2570;">FF</div></div><div class="mn"><h3 class="mm">Fabr&iacute;cio Fonseca D&rsquo;Assun&ccedil;&atilde;o</h3><p class="mf">Psiquiatra</p><p class="mr">CRM 283989</p><span class="ca">P&oacute;s em Psiquiatria</span></div></div></div></div>
+  <div class="div"></div>
+  <div class="section"><p class="sec-lbl">Endocrinologistas</p><div class="grid"><div class="mc"><div class="mw"><img src="img/autor-felipe.png" class="mi" alt="FB"></div><div class="mn"><h3 class="mm">Felipe Rodrigues Fernandes Beata</h3><p class="mf">Endocrinologista</p><p class="mr">CRM 258004</p><span class="ca">P&oacute;s em Endocrinologia</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-lais.png" class="mi" alt="LA"></div><div class="mn"><h3 class="mm">La&iacute;s Hernandes Aielo</h3><p class="mf">Endocrinologista</p><p class="mr">CRM 244652</p><span class="ca">P&oacute;s em Endocrinologia</span></div></div>
+<div class="mc"><div class="mw"><img src="img/autor-stela.png" class="mi" alt="SK"></div><div class="mn"><h3 class="mm">Stela Erika Kudo</h3><p class="mf">Endocrinologista Pedi&aacute;trica</p><p class="mr">CRM 287732</p><span class="ca">P&oacute;s em Endocrinologia Pedi&aacute;trica</span></div></div></div></div>
+</div>
+<footer>
+  <img class="fpsi" src="img/psi.png" alt="Psi">
+  <p>&copy; Ledesma Suarez &middot; Centro de Sa&uacute;de e Desenvolvimento<br>Sorocaba &ndash; SP &middot; (15) 99803-0909 &middot; recepcao@ledesmasuarez.com</p>
+  <p><a href="index.html">In&iacute;cio</a> &middot; <a href="blog.html">Publica&ccedil;&otilde;es</a></p>
+</footer>
+</body>
+</html>
