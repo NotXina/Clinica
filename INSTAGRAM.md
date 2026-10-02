@@ -227,3 +227,35 @@ Curtidas e número de seguidores são métricas de vaidade — a decisão de pau
 - [ ] Texto alternativo preenchido
 - [ ] Legenda com palavra-chave + CTA suave ("agende pelo link da bio")
 - [ ] 5–10 hashtags relevantes, incluindo locais
+
+---
+
+## 11. Integração Instagram ↔ site
+
+O que já foi implementado no repositório:
+
+- **Grade "No Instagram" na home** (`index.html` seção `#instagram`), montada por
+  `assets/site.js` a partir de `assets/instagram.json`. Mostra até 8 posts em cards
+  quadrados que abrem o post original. Com `"posts": []` a seção some sozinha, sem
+  deixar buraco no layout.
+- **`tools/instagram-thumb.sh`** — recorta e otimiza a imagem baixada do post para
+  600×600 em `img/ig/`.
+- **`FOTOS-EQUIPE.md`** — passo a passo para transformar fotos de posts de equipe nos
+  avatares circulares que faltam (Ana Marcia, Debora, Rafaela e Marcia).
+
+Por que não é um feed automático: o Instagram bloqueia leitura sem autenticação
+(resposta 403) e widgets de terceiros pedem token da API, custam mensalidade, inserem
+scripts externos e derrubam o desempenho da página. A curadoria manual de 4 a 8 posts
+a cada mês dá um resultado melhor — você escolhe os posts que convertem, o site não
+depende de serviço externo e não há cookie de terceiros (LGPD).
+
+### Rotina mensal sugerida (10 minutos)
+1. Escolher os 4–8 posts do mês com mais salvamentos.
+2. Baixar a imagem de cada um e rodar `tools/instagram-thumb.sh`.
+3. Atualizar `assets/instagram.json` com imagem, URL do post, tipo, legenda curta e alt.
+4. Publicar.
+
+### Fluxo no sentido inverso (site → Instagram)
+- Cada artigo novo em `/artigos/` rende 1 Reels + 1 carrossel + 3 stories.
+- As perguntas do FAQ da home são roteiro pronto de stories e de destaque.
+- Links do Instagram para o site devem sempre levar UTM (`utm_source=instagram`).

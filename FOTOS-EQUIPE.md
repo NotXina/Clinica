@@ -50,3 +50,35 @@ Nada mais precisa ser editado no HTML. Basta confirmar que os quatro arquivos es
 python3 -m http.server 8080
 # abra http://localhost:8080/equipe.html
 ```
+
+---
+
+## Usando fotos que já estão no Instagram
+
+As quatro fotos que faltam provavelmente já existem no **@clinicaledesmasuarez**
+(posts de apresentação da equipe). Como o Instagram bloqueia download automatizado,
+o caminho é manual e leva ~5 minutos:
+
+1. Abra o post no Instagram **logado na conta da clínica**.
+2. Baixe a imagem em resolução cheia:
+   - no celular, pelo próprio app (menu do post → compartilhar/salvar), ou
+   - no desktop, botão direito → "Abrir imagem em nova guia" → salvar.
+   Prefira sempre o **arquivo original** que foi enviado ao Instagram (geralmente está
+   no celular de quem postou ou no drive da clínica), porque o Instagram recomprime e
+   a foto chega ao site com menos qualidade.
+3. Rode `tools/avatar.sh` normalmente, como descrito acima.
+
+**Atenção:** só use fotos de profissionais da equipe, com autorização de uso de imagem.
+Nunca reaproveite para o site imagens de posts que contenham pacientes, crianças
+atendidas ou terceiros — além da questão de direito de imagem, isso fere o sigilo
+profissional (Nota Técnica CFP nº 1/2022).
+
+## Outros materiais do Instagram que valem para o site
+
+| Material do perfil | Onde usa no site |
+|---|---|
+| Fotos de posts de equipe | `img/autor-*.png` (via `tools/avatar.sh`) |
+| Fotos da fachada, salas e recepção | galeria da home (`img/espaco*.jpg`, `img/fachada.jpg`) |
+| Capas de carrossel educativo | grade do Instagram na home (`assets/instagram.json` + `tools/instagram-thumb.sh`) |
+| Textos de legendas longas | rascunho de novos artigos em `/artigos/` |
+| Dúvidas recorrentes da caixinha de perguntas | novas perguntas no FAQ da home |

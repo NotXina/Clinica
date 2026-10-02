@@ -510,6 +510,14 @@ body{font-family:'Jost',sans-serif;background:var(--lilp);color:var(--td);min-he
 .rtcnpj{font-size:0.68rem;color:var(--lav);text-align:center;border-top:1px solid var(--lils);padding-top:12px;letter-spacing:0.01em;line-height:1.7;}
 
 /* PUBLICAÇÕES */
+/* Instagram */
+.ig-sub{font-size:0.92rem;color:var(--tm);margin:-6px 0 16px;line-height:1.6;}
+.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:8px;}
+.ig-card{position:relative;display:block;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:var(--lils);aspect-ratio:1/1;}
+.ig-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s;}
+.ig-card:hover img{transform:scale(1.05);}
+.ig-card figcaption{position:absolute;inset:auto 0 0 0;padding:26px 12px 10px;font-size:0.78rem;line-height:1.35;color:#fff;background:linear-gradient(transparent,rgba(42,16,64,0.82));}
+.ig-badge{position:absolute;top:8px;right:9px;font-size:0.68rem;font-weight:600;color:#fff;background:rgba(42,16,64,0.6);backdrop-filter:blur(4px);padding:3px 8px;border-radius:50px;letter-spacing:.03em;}
 .pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:8px;}
 .pub-card{background:var(--wh);border-radius:18px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;text-decoration:none;border:1.5px solid transparent;transition:transform 0.22s,box-shadow 0.22s,border-color 0.22s;}
 .pub-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(107,58,138,0.16);border-color:var(--lils);}
@@ -546,6 +554,7 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
   .bottom-grid{grid-template-columns:1fr;gap:12px;}
   .gallery-grid{grid-template-columns:1fr 1fr;}
   .pub-grid{grid-template-columns:1fr;}
+  .ig-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
   footer{grid-template-columns:1fr;text-align:center;padding:32px 24px 44px;gap:16px;}
   .footer-psi{margin:0 auto;}
   .footer-right{text-align:center;}
@@ -760,6 +769,18 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
     </div>
   </div>
 
+
+  <!-- ═══ INSTAGRAM ═══
+       A grade é montada por assets/site.js a partir de assets/instagram.json.
+       Enquanto não houver posts cadastrados, a seção fica oculta. -->
+  <div class="section ig-section" id="instagram" hidden>
+    <p class="sec-lbl">No Instagram</p>
+    <p class="ig-sub"></p>
+    <div class="ig-grid"></div>
+    <div style="text-align:center;margin-top:20px;">
+      <a href="https://instagram.com/clinicaledesmasuarez" target="_blank" rel="noopener" class="pub-btn">Seguir @clinicaledesmasuarez →</a>
+    </div>
+  </div>
 
   <div class="div"></div>
 
