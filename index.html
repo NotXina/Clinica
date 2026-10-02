@@ -492,7 +492,7 @@ body{font-family:'Jost',sans-serif;background:var(--lilp);color:var(--td);min-he
 
 /* GALERIA */
 .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.gallery-grid img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 2px 10px rgba(107,58,138,0.12);aspect-ratio:4/3;object-fit:cover;loading:lazy;}
+.gallery-grid img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 2px 10px rgba(107,58,138,0.12);aspect-ratio:4/3;object-fit:cover;loading:lazy;cursor:zoom-in;transition:transform .2s,box-shadow .2s;}.gallery-grid img:hover,.gallery-grid img:focus{transform:scale(1.02);box-shadow:0 5px 18px rgba(107,58,138,0.22);outline:3px solid var(--lil);outline-offset:2px;}.lightbox[hidden]{display:none;}.lightbox{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:28px;background:rgba(31,12,45,.9);cursor:zoom-out;}.lightbox-image{display:block;max-width:min(1100px,96vw);max-height:90vh;width:auto;height:auto;object-fit:contain;border-radius:12px;box-shadow:0 12px 50px rgba(0,0,0,.45);cursor:default;}.lightbox-close{position:absolute;top:16px;right:20px;width:44px;height:44px;border:1px solid rgba(255,255,255,.45);border-radius:50%;background:rgba(61,18,96,.8);color:#fff;font-size:2rem;line-height:1;cursor:pointer;}.lightbox-close:hover,.lightbox-close:focus{background:var(--pm);outline:2px solid #fff;outline-offset:2px;}.js-ampliar-foto{cursor:zoom-in;}.lightbox-open{overflow:hidden;}
 .insta{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;padding:14px;text-align:center;text-decoration:none;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:#fff;border-radius:14px;font-weight:600;font-size:0.9rem;box-shadow:0 4px 16px rgba(131,58,180,0.3);letter-spacing:0.03em;transition:opacity 0.2s;}
 .insta:hover{opacity:0.9;}
 
@@ -615,7 +615,7 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
     <a class="hero-team-link" href="equipe.html">Conheça nossa equipe <span aria-hidden="true">→</span></a>
   </div>
   <div class="hero-img">
-    <img src="img/fachada.jpg" alt="Fachada da Clínica Ledesma Suarez na Rua Capitão Alfredo Cardoso, em Sorocaba" width="900" height="600" fetchpriority="high" decoding="async">
+    <img class="js-ampliar-foto" src="img/fachada.jpg" alt="Fachada da Clínica Ledesma Suarez na Rua Capitão Alfredo Cardoso, em Sorocaba" width="900" height="600" fetchpriority="high" decoding="async">
   </div>
 </section>
 
@@ -697,10 +697,10 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
       <div>
         <p class="sec-lbl">Nosso Espaço</p>
         <div class="gallery-grid">
-          <img src="img/espaco1.jpg" alt="Recepção da Clínica Ledesma Suarez em Sorocaba" width="400" height="300" loading="lazy" decoding="async">
-          <img src="img/espaco2.jpg" alt="Sala de atendimento psicológico da clínica" width="400" height="300" loading="lazy" decoding="async">
-          <img src="img/espaco3.jpg" alt="Corredor e salas de atendimento da clínica" width="400" height="300" loading="lazy" decoding="async">
-          <img src="img/espaco4.jpg" alt="Espaço de recepção e espera da Clínica Ledesma Suarez" width="400" height="300" loading="lazy" decoding="async">
+          <img class="js-ampliar-foto" src="img/espaco1.jpg" alt="Recepção da Clínica Ledesma Suarez em Sorocaba" width="400" height="300" loading="lazy" decoding="async">
+          <img class="js-ampliar-foto" src="img/espaco2.jpg" alt="Sala de atendimento psicológico da clínica" width="400" height="300" loading="lazy" decoding="async">
+          <img class="js-ampliar-foto" src="img/espaco3.jpg" alt="Corredor e salas de atendimento da clínica" width="400" height="300" loading="lazy" decoding="async">
+          <img class="js-ampliar-foto" src="img/espaco4.jpg" alt="Espaço de recepção e espera da Clínica Ledesma Suarez" width="400" height="300" loading="lazy" decoding="async">
         </div>
         <a class="insta" href="https://instagram.com/clinicaledesmasuarez" target="_blank" rel="noopener">📷 &nbsp;@clinicaledesmasuarez</a>
       </div>
@@ -715,7 +715,7 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
       <div>
         <p class="sec-lbl">Fundadores</p>
         <div class="founders-card">
-          <img src="img/fundadores.jpg" alt="Thaís Ledesma e Fernando Suarez, fundadores da clínica" width="320" height="320" loading="lazy" decoding="async">
+          <img class="js-ampliar-foto" src="img/fundadores.jpg" alt="Thaís Ledesma e Fernando Suarez, fundadores da clínica" width="320" height="320" loading="lazy" decoding="async">
           <div>
             <h3>Thaís Ledesma &amp; Fernando Suarez</h3>
             <p>Fundadores e idealizadores do Centro de Saúde e Desenvolvimento, em Sorocaba desde 2023.</p>
@@ -884,6 +884,7 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
   <span>Agendar</span>
 </a>
 
+<script src="assets/site.js" defer></script>
 <script>
 function showConv(id,btn){
   document.querySelectorAll('.convpanel').forEach(p=>p.classList.remove('active'));
