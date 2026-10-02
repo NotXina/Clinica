@@ -74,6 +74,58 @@
     });
   }
 
+  /* Grade do Instagram — alimentada por assets/instagram.json.
+     Imagens ficam em img/ig/ e os links apontam para o post original.
+     Se não houver posts cadastrados (ou o arquivo falhar), a seção permanece oculta. */
+  var igSec = document.getElementById('instagram');
+  if (igSec && window.fetch) {
+    fetch('assets/instagram.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (dados) {
+        if (!dados || !Array.isArray(dados.posts) || !dados.posts.length) return;
+        var perfil = dados.perfil || 'clinicaledesmasuarez';
+        var grade = igSec.querySelector('.ig-grid');
+        var sub = igSec.querySelector('.ig-sub');
+        if (sub && dados.chamada) { sub.textContent = dados.chamada; } else if (sub) { sub.remove(); }
+
+        dados.posts.slice(0, 8).forEach(function (p) {
+          if (!p || !p.imagem) return;
+          var a = document.createElement('a');
+          a.className = 'ig-card';
+          a.href = p.url || ('https://instagram.com/' + perfil);
+          a.target = '_blank';
+          a.rel = 'noopener';
+
+          var fig = document.createElement('figure');
+          var img = document.createElement('img');
+          img.src = p.imagem;
+          img.alt = p.alt || p.legenda || 'Publicação da Clínica Ledesma Suarez no Instagram';
+          img.width = 600;
+          img.height = 600;
+          img.loading = 'lazy';
+          img.decoding = 'async';
+          fig.appendChild(img);
+
+          if (p.tipo) {
+            var badge = document.createElement('span');
+            badge.className = 'ig-badge';
+            badge.textContent = p.tipo;
+            fig.appendChild(badge);
+          }
+          if (p.legenda) {
+            var cap = document.createElement('figcaption');
+            cap.textContent = p.legenda;
+            fig.appendChild(cap);
+          }
+          a.appendChild(fig);
+          grade.appendChild(a);
+        });
+
+        if (grade.children.length) { igSec.removeAttribute('hidden'); }
+      })
+      .catch(function () { /* mantém a seção oculta */ });
+  }
+
   /* Perguntas frequentes (acordeão) */
   document.querySelectorAll('.faq-q').forEach(function (q) {
     q.addEventListener('click', function () {

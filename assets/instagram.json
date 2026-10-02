@@ -1,0 +1,42 @@
+{
+  "perfil": "clinicaledesmasuarez",
+  "chamada": "Conteúdo sobre saúde mental, desenvolvimento e bastidores da clínica. Siga para acompanhar.",
+  "_como_usar": "Cada item vira um card quadrado na home, linkando para o post original. Baixe a imagem do post no Instagram, rode tools/instagram-thumb.sh para gerar o quadrado 600x600 em img/ig/ e cadastre aqui. Máximo exibido: 8. Para ocultar a seção, deixe posts como [].",
+  "_exemplo": {
+    "imagem": "img/ig/ig-01.jpg",
+    "url": "https://www.instagram.com/p/CODIGO_DO_POST/",
+    "tipo": "Carrossel",
+    "legenda": "Texto curto que aparece sobre a imagem",
+    "alt": "Descrição da imagem para leitores de tela"
+  },
+  "posts": [
+    {
+      "imagem": "img/espaco1.jpg",
+      "url": "https://instagram.com/clinicaledesmasuarez",
+      "tipo": "Bastidores",
+      "legenda": "A recepção que recebe você",
+      "alt": "Recepção da Clínica Ledesma Suarez em Sorocaba"
+    },
+    {
+      "imagem": "img/espaco2.jpg",
+      "url": "https://instagram.com/clinicaledesmasuarez",
+      "tipo": "Bastidores",
+      "legenda": "Como é a sala de atendimento",
+      "alt": "Sala de atendimento psicológico da clínica"
+    },
+    {
+      "imagem": "img/espaco3.jpg",
+      "url": "https://instagram.com/clinicaledesmasuarez",
+      "tipo": "Bastidores",
+      "legenda": "Nossos espaços por dentro",
+      "alt": "Corredor e salas de atendimento da clínica"
+    },
+    {
+      "imagem": "img/fundadores.jpg",
+      "url": "https://instagram.com/clinicaledesmasuarez",
+      "tipo": "Equipe",
+      "legenda": "Thaís Ledesma e Fernando Suarez",
+      "alt": "Thaís Ledesma e Fernando Suarez, fundadores da clínica"
+    }
+  ]
+}
