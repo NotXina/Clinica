@@ -1,0 +1,15 @@
+{
+  "name": "Clínica Ledesma Suarez — Centro de Saúde e Desenvolvimento",
+  "short_name": "Ledesma Suarez",
+  "description": "Psicologia, Psiquiatria, Neuropsicologia, Nutrição e Endocrinologia em Sorocaba/SP.",
+  "lang": "pt-BR",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f0ff",
+  "theme_color": "#3d1260",
+  "icons": [
+    { "src": "/img/psi.png", "sizes": "any", "type": "image/png", "purpose": "any" },
+    { "src": "/img/favicon.ico", "sizes": "48x48", "type": "image/x-icon" }
+  ]
+}

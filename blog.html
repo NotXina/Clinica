@@ -2,761 +2,364 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Publicações – Ledesma Suarez</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Publicações sobre Saúde Mental | Clínica Ledesma Suarez</title>
+<meta name="description" content="Artigos sobre TDAH, autismo, neurodivergência, ansiedade e desenvolvimento infantil escritos por psicólogos e psiquiatras da Clínica Ledesma Suarez, em Sorocaba/SP.">
+<meta name="keywords" content="blog saúde mental, TDAH, autismo, neurodivergência, psicologia Sorocaba, artigos psicologia, ansiedade, desenvolvimento infantil">
+<meta name="author" content="Clínica Ledesma Suarez">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://ledesmasuarez.com.br/blog.html">
+<meta name="theme-color" content="#3d1260">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ledesmasuarez.com.br/blog.html">
+<meta property="og:title" content="Publicações sobre Saúde Mental — Ledesma Suarez">
+<meta property="og:description" content="Artigos sobre TDAH, autismo, neurodivergência, ansiedade e desenvolvimento infantil, escritos pela nossa equipe em Sorocaba/SP.">
+<meta property="og:image" content="https://ledesmasuarez.com.br/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Clínica Ledesma Suarez">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publicações sobre Saúde Mental — Ledesma Suarez">
+<meta name="twitter:description" content="Artigos sobre TDAH, autismo, neurodivergência e desenvolvimento infantil pela equipe da Clínica Ledesma Suarez.">
+<meta name="twitter:image" content="https://ledesmasuarez.com.br/img/og-image.jpg">
+
 <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-<link rel="shortcut icon" href="img/favicon.ico">
 <link rel="apple-touch-icon" href="img/psi.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Publicações Ledesma Suarez" href="https://ledesmasuarez.com.br/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/artigo.css">
 <style>
-:root{--pd:#3d1260;--pm:#6b3a8a;--lav:#9b72c0;--lil:#c8a8e0;--lils:#e8d8f4;--lilp:#f7f0ff;--wh:#fefcff;--td:#2a1040;--tm:#5a3a7a;}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:'Jost',sans-serif;background:var(--lilp);color:var(--td);min-height:100vh;}
-
-/* NAV */
-.nav{
-  background:linear-gradient(135deg,var(--pd),var(--pm));
-  padding:0 8%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  height:64px;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 2px 20px rgba(61,18,96,0.3);
-}
-.nav-brand{
-  display:flex;align-items:center;gap:10px;text-decoration:none;
-}
-.nav-brand img{width:28px;height:28px;filter:brightness(0) invert(1);opacity:0.9;}
-.nav-brand span{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.2rem;font-style:italic;font-weight:400;color:#fff;
-}
-.nav-back{
-  display:flex;align-items:center;gap:6px;
-  color:var(--lil);font-size:0.78rem;font-weight:500;
-  text-decoration:none;letter-spacing:0.04em;
-  transition:color 0.2s;
-}
-.nav-back:hover{color:#fff;}
-.nav-back svg{width:14px;height:14px;}
-
-/* HERO DO BLOG */
-.blog-hero{
-  background:linear-gradient(155deg,var(--pd) 0%,var(--pm) 60%,var(--lav) 100%);
-  padding:60px 8% 52px;
-  position:relative;
-  overflow:hidden;
-}
-.blog-hero::before{
-  content:'';position:absolute;
-  right:5%;top:50%;transform:translateY(-50%);
-  width:260px;height:260px;
-  background:url("img/psi.png") center/contain no-repeat;
-  opacity:0.05;pointer-events:none;
-  filter:brightness(0) invert(1);
-}
-.blog-hero h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(2rem,4vw,3rem);
-  font-weight:300;color:#fff;
-  letter-spacing:0.02em;margin-bottom:10px;
-}
+.blog-hero{background:linear-gradient(155deg,var(--pd) 0%,var(--pm) 60%,var(--lav) 100%);padding:60px 8% 52px;position:relative;overflow:hidden;}
+.blog-hero::before{content:'';position:absolute;right:5%;top:50%;transform:translateY(-50%);width:260px;height:260px;background:url("img/psi.png") center/contain no-repeat;opacity:.05;pointer-events:none;filter:brightness(0) invert(1);}
+.blog-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:#fff;letter-spacing:.02em;margin-bottom:10px;}
 .blog-hero h1 em{font-style:italic;font-weight:400;}
-.blog-hero p{color:var(--lil);font-size:0.85rem;letter-spacing:0.04em;max-width:500px;line-height:1.6;}
-
-/* CONTAINER */
+.blog-hero p{color:var(--lil);font-size:.88rem;letter-spacing:.02em;max-width:560px;line-height:1.7;}
 .container{max-width:1100px;margin:0 auto;padding:0 40px;}
 @media(max-width:768px){.container{padding:0 16px;}}
-
-/* GRID DE ARTIGOS */
-.articles-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-  gap:24px;
-  padding:48px 0;
-}
-
-/* CARD */
-.card{
-  background:var(--wh);
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 2px 20px rgba(107,58,138,0.09);
-  display:flex;flex-direction:column;
-  transition:transform 0.25s,box-shadow 0.25s;
-  cursor:pointer;
-}
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 8px 32px rgba(107,58,138,0.18);
-}
-.card-tag{
-  background:var(--lilp);
-  padding:10px 20px 0;
-}
-.card-tag span{
-  display:inline-block;
-  background:var(--lils);
-  color:var(--pm);
-  font-size:0.62rem;
-  font-weight:700;
-  letter-spacing:0.14em;
-  text-transform:uppercase;
-  padding:4px 12px;
-  border-radius:40px;
-}
+.filtros{display:flex;gap:9px;flex-wrap:wrap;padding:28px 0 0;}
+.filtro{font-family:'Jost',sans-serif;font-size:.76rem;font-weight:600;letter-spacing:.04em;color:var(--pm);background:var(--wh);border:1px solid var(--lils);padding:8px 18px;border-radius:40px;cursor:pointer;transition:all .2s;}
+.filtro:hover{border-color:var(--lav);}
+.filtro.active{background:var(--pd);color:#fff;border-color:var(--pd);}
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px;padding:26px 0 10px;}
+.card{background:var(--wh);border-radius:20px;overflow:hidden;box-shadow:0 2px 20px rgba(107,58,138,.09);transition:transform .25s,box-shadow .25s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(107,58,138,.18);}
+.card-link{display:flex;flex-direction:column;height:100%;text-decoration:none;color:inherit;}
+.card-tag{background:var(--lilp);padding:14px 20px 0;}
+.card-tag span{display:inline-block;background:var(--lils);color:var(--pm);font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:40px;}
 .card-body{padding:16px 20px 20px;flex:1;display:flex;flex-direction:column;gap:10px;}
-.card-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.18rem;font-weight:600;
-  color:var(--pd);line-height:1.3;
-}
-.card-excerpt{
-  font-size:0.82rem;color:var(--tm);line-height:1.6;flex:1;
-}
-.card-author{
-  display:flex;align-items:center;gap:10px;
-  padding-top:14px;
-  border-top:1px solid var(--lils);
-  margin-top:auto;
-}
-.card-author img{
-  width:40px;height:40px;
-  border-radius:50%;
-  object-fit:cover;
-  border:2px solid var(--lils);
-  flex-shrink:0;
-}
-.card-author-info .name{font-size:0.8rem;font-weight:600;color:var(--td);}
-.card-author-info .crp{font-size:0.68rem;color:var(--lav);}
-.card-read{
-  display:inline-flex;align-items:center;gap:5px;
-  margin-top:14px;
-  font-size:0.76rem;font-weight:600;
-  color:var(--lav);letter-spacing:0.04em;
-  text-decoration:none;
-}
-.card-read svg{width:14px;height:14px;transition:transform 0.2s;}
+.card-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--pd);line-height:1.3;}
+.card-excerpt{font-size:.84rem;color:var(--tm);line-height:1.65;flex:1;}
+.card-author{display:flex;align-items:center;gap:10px;padding-top:14px;border-top:1px solid var(--lils);margin-top:auto;}
+.card-author img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--lils);flex-shrink:0;}
+.card-author-info .name{font-size:.8rem;font-weight:600;color:var(--td);}
+.card-author-info .crp{font-size:.68rem;color:var(--lav);}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;}
+.card-foot time{font-size:.7rem;color:var(--lav);}
+.card-read{display:inline-flex;align-items:center;gap:5px;font-size:.76rem;font-weight:600;color:var(--lav);letter-spacing:.04em;}
+.card-read svg{width:14px;height:14px;transition:transform .2s;}
 .card:hover .card-read svg{transform:translateX(3px);}
-
-/* ── MODAL / ARTIGO COMPLETO ── */
-.modal-overlay{
-  display:none;position:fixed;inset:0;
-  background:rgba(40,10,70,0.55);
-  backdrop-filter:blur(4px);
-  z-index:200;
-  overflow-y:auto;
-  padding:40px 20px;
-}
-.modal-overlay.open{display:block;}
-.modal{
-  max-width:740px;margin:0 auto;
-  background:var(--wh);
-  border-radius:24px;
-  overflow:hidden;
-  box-shadow:0 20px 60px rgba(61,18,96,0.25);
-}
-.modal-header{
-  background:linear-gradient(135deg,var(--pd),var(--pm));
-  padding:36px 40px 32px;
-  position:relative;
-}
-.modal-close{
-  position:absolute;top:16px;right:16px;
-  background:rgba(255,255,255,0.15);
-  border:none;color:#fff;
-  width:36px;height:36px;border-radius:50%;
-  cursor:pointer;font-size:1.1rem;
-  display:flex;align-items:center;justify-content:center;
-  transition:background 0.2s;
-}
-.modal-close:hover{background:rgba(255,255,255,0.25);}
-.modal-tag{
-  display:inline-block;
-  background:rgba(255,255,255,0.18);
-  color:rgba(255,255,255,0.9);
-  font-size:0.62rem;font-weight:700;
-  letter-spacing:0.14em;text-transform:uppercase;
-  padding:4px 12px;border-radius:40px;margin-bottom:14px;
-}
-.modal-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(1.4rem,3vw,1.9rem);
-  font-weight:400;font-style:italic;
-  color:#fff;line-height:1.25;
-}
-.modal-author-bar{
-  display:flex;align-items:center;gap:14px;
-  padding:20px 40px;
-  border-bottom:1px solid var(--lils);
-  background:var(--lilp);
-}
-.modal-author-bar img{
-  width:52px;height:52px;
-  border-radius:50%;
-  object-fit:cover;
-  border:2px solid var(--lil);
-  flex-shrink:0;
-}
-.modal-author-bar .name{font-size:0.9rem;font-weight:600;color:var(--td);}
-.modal-author-bar .crp{font-size:0.74rem;color:var(--lav);margin-top:2px;}
-.modal-body{
-  padding:36px 40px 44px;
-}
-.modal-body p{
-  font-size:1rem;
-  line-height:1.85;
-  color:var(--td);
-  margin-bottom:1.2em;
-}
-.modal-body p:last-child{margin-bottom:0;}
-.modal-body strong{color:var(--pd);}
-
-/* FOOTER */
-footer{
-  margin-top:0;padding:40px 8%;
-  background:linear-gradient(135deg,var(--pd),var(--pm));
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-  flex-wrap:wrap;
-}
-footer img.fpsi{width:36px;height:36px;filter:brightness(0) invert(1);opacity:0.4;}
-footer p{color:var(--lil);font-size:0.74rem;line-height:1.8;}
-footer a{color:var(--lil);text-decoration:none;font-weight:600;}
-footer a:hover{color:#fff;}
-
-@media(max-width:600px){
-  .blog-hero{padding:40px 20px 36px;}
-  .articles-grid{grid-template-columns:1fr;padding:28px 0;}
-  .modal-header{padding:24px 20px 20px;}
-  .modal-author-bar{padding:14px 20px;}
-  .modal-body{padding:24px 20px 32px;}
-  footer{flex-direction:column;text-align:center;padding:28px 20px;}
-}
-
-.nav{background:linear-gradient(135deg,var(--pd),var(--pm));padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(61,18,96,.3);}
-.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
-.nav-brand img{width:28px;height:28px;filter:brightness(0) invert(1);opacity:.9;}
-.nav-brand span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;font-weight:400;color:#fff;}
-.nav-links{display:flex;align-items:center;gap:24px;}
-.nav-links a{color:var(--lil);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.04em;transition:color .2s;}
-.nav-links a:hover{color:#fff;}
-.nav-cta{background:rgba(255,255,255,.15);color:#fff !important;padding:7px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.25);font-weight:600 !important;transition:background .2s !important;}
-.nav-cta:hover{background:rgba(255,255,255,.25) !important;}
-@media(max-width:600px){
-  .nav-links a:not(.nav-cta){display:none;}
-}
+.blog-cta{margin:10px 0 46px;}
 </style>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Publicações – Ledesma Suarez",
-  "url": "https://ledesmasuarez.com.br/blog.html",
-  "publisher": {
-    "@type": "MedicalClinic",
-    "name": "Clínica Ledesma Suarez",
-    "url": "https://ledesmasuarez.com.br",
-    "logo": "https://ledesmasuarez.com.br/img/psi.png"
-  },
-  "blogPost": [
+  "@graph": [
     {
-      "@type": "MedicalWebPage",
-      "headline": "Eu odeio Carnaval: validando a preferência pelo silêncio",
-      "description": "Para muitas pessoas neurodivergentes, o Carnaval representa sobrecarga sensorial e pressão social. Entenda por que o silêncio também é uma escolha válida.",
+      "@type": "Blog",
+      "@id": "https://ledesmasuarez.com.br/blog.html#blog",
+      "name": "Publicações Ledesma Suarez",
+      "description": "Artigos sobre saúde mental, TDAH, autismo, neurodivergência, desenvolvimento infantil e bem-estar, escritos pela equipe da Clínica Ledesma Suarez em Sorocaba/SP.",
       "url": "https://ledesmasuarez.com.br/blog.html",
-      "datePublished": "2025-02-01",
-      "dateModified": "2025-02-01",
       "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": "Lucas Labrunetti Zwerkovoski",
-        "jobTitle": "Psicólogo",
-        "identifier": "CRP 06/201987",
-        "worksFor": {
-          "@type": "MedicalClinic",
-          "name": "Clínica Ledesma Suarez"
+      "publisher": {
+        "@type": "Organization",
+        "name": "Clínica Ledesma Suarez",
+        "url": "https://ledesmasuarez.com.br",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ledesmasuarez.com.br/img/psi.png"
         }
       },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Neurodivergência"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      }
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "O Ano só começa agora? TDAH e a retomada da rotina",
+          "url": "https://ledesmasuarez.com.br/artigos/tdah-retomada-da-rotina.html",
+          "datePublished": "2026-02-24",
+          "articleSection": "TDAH",
+          "author": {
+            "@type": "Person",
+            "name": "Yasmim Vieira"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Ressaca Social Pós-Feriado: Recuperando as Baterias",
+          "url": "https://ledesmasuarez.com.br/artigos/ressaca-social-pos-feriado.html",
+          "datePublished": "2026-02-20",
+          "articleSection": "Neurodivergência",
+          "author": {
+            "@type": "Person",
+            "name": "Yasmim Vieira"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Carnaval Inclusivo: como montar um kit de regulação sensorial",
+          "url": "https://ledesmasuarez.com.br/artigos/carnaval-inclusivo-kit-regulacao-sensorial.html",
+          "datePublished": "2026-02-12",
+          "articleSection": "Neurodivergência",
+          "author": {
+            "@type": "Person",
+            "name": "Lucas Labrunetti Zwerkovoski"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "\"Eu odeio Carnaval\": validando a preferência pelo silêncio",
+          "url": "https://ledesmasuarez.com.br/artigos/odeio-carnaval-preferencia-pelo-silencio.html",
+          "datePublished": "2026-02-10",
+          "articleSection": "Neurodivergência",
+          "author": {
+            "@type": "Person",
+            "name": "Lucas Labrunetti Zwerkovoski"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Ansiedade de Separação e Autismo: dicas para a porta da escola",
+          "url": "https://ledesmasuarez.com.br/artigos/ansiedade-de-separacao-autismo-porta-da-escola.html",
+          "datePublished": "2026-02-05",
+          "articleSection": "Autismo · Família",
+          "author": {
+            "@type": "Person",
+            "name": "Gabriela Meneghitti Godoy de Souza"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Adaptação Escolar: 5 sinais de que o PEI do seu filho precisa de revisão",
+          "url": "https://ledesmasuarez.com.br/artigos/adaptacao-escolar-sinais-revisao-pei.html",
+          "datePublished": "2026-02-03",
+          "articleSection": "Educação Inclusiva",
+          "author": {
+            "@type": "Person",
+            "name": "Gabriela Meneghitti Godoy de Souza"
+          }
+        }
+      ]
     },
     {
-      "@type": "MedicalWebPage",
-      "headline": "Adaptação Escolar: 5 sinais de que o PEI do seu filho precisa de revisão",
-      "description": "O Plano de Ensino Individualizado (PEI) é essencial para alunos com necessidades específicas. Saiba quando ele precisa ser revisto.",
-      "url": "https://ledesmasuarez.com.br/blog.html",
-      "datePublished": "2025-03-01",
-      "dateModified": "2025-03-01",
-      "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": "Gabriela Meneghitti Godoy de Souza",
-        "jobTitle": "Psicóloga",
-        "identifier": "CRP 06/218745",
-        "worksFor": {
-          "@type": "MedicalClinic",
-          "name": "Clínica Ledesma Suarez"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://ledesmasuarez.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publicações",
+          "item": "https://ledesmasuarez.com.br/blog.html"
         }
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Inclusão Escolar"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      }
-    },
-    {
-      "@type": "MedicalWebPage",
-      "headline": "Ansiedade de Separação e Autismo: dicas para a porta da escola",
-      "description": "Para crianças autistas, a separação na porta da escola pode ser intensa. Saiba como ajudar com estratégias práticas.",
-      "url": "https://ledesmasuarez.com.br/blog.html",
-      "datePublished": "2025-03-15",
-      "dateModified": "2025-03-15",
-      "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": "Gabriela Meneghitti Godoy de Souza",
-        "jobTitle": "Psicóloga",
-        "identifier": "CRP 06/218745",
-        "worksFor": {
-          "@type": "MedicalClinic",
-          "name": "Clínica Ledesma Suarez"
-        }
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Transtorno do Espectro Autista"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      }
-    },
-    {
-      "@type": "MedicalWebPage",
-      "headline": "Ressaca Social Pós-Feriado: Recuperando as Baterias",
-      "description": "A ressaca social é real para pessoas neurodivergentes. Entenda o fenômeno e veja estratégias para se recuperar.",
-      "url": "https://ledesmasuarez.com.br/blog.html",
-      "datePublished": "2025-02-15",
-      "dateModified": "2025-02-15",
-      "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": "Yasmim do Carmo Vieira",
-        "jobTitle": "Neuropsicóloga",
-        "identifier": "CRP 06/202107",
-        "worksFor": {
-          "@type": "MedicalClinic",
-          "name": "Clínica Ledesma Suarez"
-        }
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Neurodivergência"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      }
-    },
-    {
-      "@type": "MedicalWebPage",
-      "headline": "O Ano só começa agora? TDAH e a retomada da rotina",
-      "description": "Para pessoas com TDAH, retomar a rotina não é falta de disciplina — é neurobiologia. Entenda e encontre estratégias compassivas.",
-      "url": "https://ledesmasuarez.com.br/blog.html",
-      "datePublished": "2025-03-05",
-      "dateModified": "2025-03-05",
-      "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": "Yasmim do Carmo Vieira",
-        "jobTitle": "Neuropsicóloga",
-        "identifier": "CRP 06/202107",
-        "worksFor": {
-          "@type": "MedicalClinic",
-          "name": "Clínica Ledesma Suarez"
-        }
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "TDAH"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      }
-    },
-    {
-      "@type": "MedicalWebPage",
-      "headline": "Carnaval Inclusivo: como montar um kit de regulação sensorial",
-      "description": "Abafadores de som, objetos de conforto e planejamento — veja como montar um kit para pessoas neurodivergentes viverem o Carnaval com mais conforto.",
-      "url": "https://ledesmasuarez.com.br/blog.html",
-      "datePublished": "2025-02-10",
-      "dateModified": "2025-02-10",
-      "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": "Lucas Labrunetti Zwerkovoski",
-        "jobTitle": "Psicólogo",
-        "identifier": "CRP 06/201987",
-        "worksFor": {
-          "@type": "MedicalClinic",
-          "name": "Clínica Ledesma Suarez"
-        }
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Neurodivergência"
-      },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      }
+      ]
     }
   ]
 }
 </script>
-
 </head>
 <body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-<!-- NAV -->
 <nav class="nav">
-  <a class="nav-brand" href="index.html"><img src="img/psi.png" alt="Ψ"><span>Ledesma Suarez</span></a>
-  <div class="nav-links">
+  <a class="nav-brand" href="index.html"><img src="img/psi.png" alt="Logotipo Ledesma Suarez" width="28" height="28"><span>Ledesma Suarez</span></a>
+  <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="nav-links" id="menu-principal">
     <a href="index.html">Início</a>
     <a href="equipe.html">Equipe</a>
-    <a href="https://wa.me/5515998030909" target="_blank" class="nav-cta">Agendar</a>
+    <a href="blog.html">Publicações</a>
+    <a href="https://wa.me/5515998030909" target="_blank" rel="noopener" class="nav-cta">Agendar</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<div class="blog-hero">
-  <h1><em>Publicações</em></h1>
-  <p>Textos escritos pelos nossos colaboradores sobre saúde mental, desenvolvimento e bem-estar.</p>
-</div>
+<header class="blog-hero">
+  <h1><em>Publicações</em> sobre saúde mental</h1>
+  <p>Textos escritos por psicólogos, psiquiatras e especialistas da Clínica Ledesma Suarez sobre TDAH, autismo, neurodivergência, ansiedade, desenvolvimento infantil e bem-estar. Conteúdo gratuito, atualizado e baseado na prática clínica em Sorocaba/SP.</p>
+</header>
 
-<!-- ARTIGOS -->
-<div class="container">
+<nav class="crumbs" style="max-width:1100px;padding-left:40px;" aria-label="Você está aqui">
+  <ol>
+    <li><a href="index.html">Início</a></li>
+    <li aria-current="page">Publicações</li>
+  </ol>
+</nav>
+
+<main class="container" id="conteudo">
+  <div class="filtros" role="group" aria-label="Filtrar publicações por tema">
+    <button type="button" class="filtro active" data-filtro="todos" aria-pressed="true">Todos os temas</button>
+    <button type="button" class="filtro" data-filtro="TDAH" aria-pressed="false">TDAH</button>
+    <button type="button" class="filtro" data-filtro="Neurodivergência" aria-pressed="false">Neurodivergência</button>
+    <button type="button" class="filtro" data-filtro="Autismo · Família" aria-pressed="false">Autismo · Família</button>
+    <button type="button" class="filtro" data-filtro="Educação Inclusiva" aria-pressed="false">Educação Inclusiva</button>
+  </div>
+
   <div class="articles-grid">
-
-    <!-- CARD 1 — Lucas -->
-    <div class="card" onclick="openModal('modal-lucas')">
-      <div class="card-tag"><span>Neurodivergência</span></div>
-      <div class="card-body">
-        <h2 class="card-title">"Eu odeio Carnaval": validando a preferência pelo silêncio</h2>
-        <p class="card-excerpt">O Carnaval é comumente associado a alegria coletiva e participação praticamente obrigatória. Mas para muitas pessoas neurodivergentes, essa época representa sobrecarga sensorial, ansiedade e esgotamento. Entenda por que o silêncio também é uma escolha válida.</p>
-        <div class="card-author">
-          <img src="img/autor-lucas.png" alt="Lucas">
-          <div class="card-author-info">
-            <div class="name">Lucas Labrunetti Zwerkovoski</div>
-            <div class="crp">CRP 06/201987</div>
+    <article class="card" data-cat="TDAH">
+      <a class="card-link" href="artigos/tdah-retomada-da-rotina.html">
+        <div class="card-tag"><span>TDAH</span></div>
+        <div class="card-body">
+          <h2 class="card-title">O Ano só começa agora? TDAH e a retomada da rotina</h2>
+          <p class="card-excerpt">No Brasil, o ano &quot;começa de verdade&quot; só depois do Carnaval. Para pessoas com TDAH, essa sensação de atraso costuma vir acompanhada de culpa e autocrítica. Entenda por que isso acontece e como retomar a rotina de forma compassiva e possível.</p>
+          <div class="card-author">
+            <img src="img/autor-yasmim.png" alt="Yasmim Vieira" width="40" height="40" loading="lazy">
+            <div class="card-author-info">
+              <div class="name">Yasmim Vieira</div>
+              <div class="crp">CRP 06/202107</div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <time datetime="2026-02-24">24 de fevereiro de 2026</time>
+            <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
-        <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-      </div>
-    </div>
-
-    <!-- CARD 2 — Gabriela (PEI) -->
-    <div class="card" onclick="openModal('modal-gabi1')">
-      <div class="card-tag"><span>Educação Inclusiva</span></div>
-      <div class="card-body">
-        <h2 class="card-title">Adaptação Escolar: 5 sinais de que o PEI do seu filho precisa de revisão</h2>
-        <p class="card-excerpt">A volta às aulas é desafiadora para muitas famílias, especialmente para alunos com necessidades educacionais específicas. O Plano de Ensino Individualizado (PEI) é uma ferramenta essencial — mas como saber quando ele precisa ser revisto? Conheça os 5 sinais.</p>
-        <div class="card-author">
-          <img src="img/autor-gabriela.png" alt="Gabriela">
-          <div class="card-author-info">
-            <div class="name">Gabriela Meneghitti G. de Souza</div>
-            <div class="crp">CRP 06/218745</div>
+      </a>
+    </article>
+    <article class="card" data-cat="Neurodivergência">
+      <a class="card-link" href="artigos/ressaca-social-pos-feriado.html">
+        <div class="card-tag"><span>Neurodivergência</span></div>
+        <div class="card-body">
+          <h2 class="card-title">Ressaca Social Pós-Feriado: Recuperando as Baterias</h2>
+          <p class="card-excerpt">Feriados e festas podem ser exaustivos para adultos neurodivergentes. A ressaca social é real e legítima — envolve sobrecarga sensorial, desgaste cognitivo e emocional acumulado. Entenda o fenômeno e veja estratégias para recuperar as baterias.</p>
+          <div class="card-author">
+            <img src="img/autor-yasmim.png" alt="Yasmim Vieira" width="40" height="40" loading="lazy">
+            <div class="card-author-info">
+              <div class="name">Yasmim Vieira</div>
+              <div class="crp">CRP 06/202107</div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <time datetime="2026-02-20">20 de fevereiro de 2026</time>
+            <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
-        <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-      </div>
-    </div>
-
-    <!-- CARD 3 — Gabriela (Ansiedade) -->
-    <div class="card" onclick="openModal('modal-gabi2')">
-      <div class="card-tag"><span>Autismo · Família</span></div>
-      <div class="card-body">
-        <h2 class="card-title">Ansiedade de Separação e Autismo: dicas para a porta da escola</h2>
-        <p class="card-excerpt">Para crianças autistas, a separação na porta da escola pode representar muito mais do que um momento difícil. Quebra de rotina, imprevisibilidade e afastamento da figura de segurança podem intensificar a ansiedade. Saiba como ajudar.</p>
-        <div class="card-author">
-          <img src="img/autor-gabriela.png" alt="Gabriela">
-          <div class="card-author-info">
-            <div class="name">Gabriela Meneghitti G. de Souza</div>
-            <div class="crp">CRP 06/218745</div>
+      </a>
+    </article>
+    <article class="card" data-cat="Neurodivergência">
+      <a class="card-link" href="artigos/carnaval-inclusivo-kit-regulacao-sensorial.html">
+        <div class="card-tag"><span>Neurodivergência</span></div>
+        <div class="card-body">
+          <h2 class="card-title">Carnaval Inclusivo: como montar um kit de regulação sensorial</h2>
+          <p class="card-excerpt">O Carnaval pode ser intenso demais para pessoas neurodivergentes. O excesso de estímulos e a quebra de rotina geram sobrecarga sensorial. Saiba o que colocar num kit de regulação sensorial para viver a festa de forma mais segura e prazerosa.</p>
+          <div class="card-author">
+            <img src="img/autor-lucas.png" alt="Lucas Labrunetti Zwerkovoski" width="40" height="40" loading="lazy">
+            <div class="card-author-info">
+              <div class="name">Lucas Labrunetti Zwerkovoski</div>
+              <div class="crp">CRP 06/201987</div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <time datetime="2026-02-12">12 de fevereiro de 2026</time>
+            <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
-        <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-      </div>
-    </div>
-
-
-    <!-- CARD 4 — Yasmim (Ressaca Social) -->
-    <div class="card" onclick="openModal('modal-yasmim1')">
-      <div class="card-tag"><span>Neurodivergência</span></div>
-      <div class="card-body">
-        <h2 class="card-title">Ressaca Social Pós-Feriado: Recuperando as Baterias</h2>
-        <p class="card-excerpt">Feriados e festas podem ser exaustivos para adultos neurodivergentes. A ressaca social é real e legítima — envolve sobrecarga sensorial, desgaste cognitivo e emocional acumulado. Entenda o fenômeno e veja estratégias para recuperar as baterias.</p>
-        <div class="card-author">
-          <img src="img/autor-yasmim.png" alt="Yasmim">
-          <div class="card-author-info">
-            <div class="name">Yasmim Vieira</div>
-            <div class="crp">CRP 06/202107</div>
+      </a>
+    </article>
+    <article class="card" data-cat="Neurodivergência">
+      <a class="card-link" href="artigos/odeio-carnaval-preferencia-pelo-silencio.html">
+        <div class="card-tag"><span>Neurodivergência</span></div>
+        <div class="card-body">
+          <h2 class="card-title">&quot;Eu odeio Carnaval&quot;: validando a preferência pelo silêncio</h2>
+          <p class="card-excerpt">O Carnaval é comumente associado a alegria coletiva e participação praticamente obrigatória. Mas para muitas pessoas neurodivergentes, essa época representa sobrecarga sensorial, ansiedade e esgotamento. Entenda por que o silêncio também é uma escolha válida.</p>
+          <div class="card-author">
+            <img src="img/autor-lucas.png" alt="Lucas Labrunetti Zwerkovoski" width="40" height="40" loading="lazy">
+            <div class="card-author-info">
+              <div class="name">Lucas Labrunetti Zwerkovoski</div>
+              <div class="crp">CRP 06/201987</div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <time datetime="2026-02-10">10 de fevereiro de 2026</time>
+            <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
-        <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-      </div>
-    </div>
-
-    <!-- CARD 5 — Yasmim (TDAH) -->
-    <div class="card" onclick="openModal('modal-yasmim2')">
-      <div class="card-tag"><span>TDAH</span></div>
-      <div class="card-body">
-        <h2 class="card-title">O Ano só começa agora? TDAH e a retomada da rotina</h2>
-        <p class="card-excerpt">No Brasil, o ano "começa de verdade" só depois do Carnaval. Para pessoas com TDAH, essa sensação de atraso costuma vir acompanhada de culpa e autocrítica. Entenda por que isso acontece e como retomar a rotina de forma compassiva e possível.</p>
-        <div class="card-author">
-          <img src="img/autor-yasmim.png" alt="Yasmim">
-          <div class="card-author-info">
-            <div class="name">Yasmim Vieira</div>
-            <div class="crp">CRP 06/202107</div>
+      </a>
+    </article>
+    <article class="card" data-cat="Autismo · Família">
+      <a class="card-link" href="artigos/ansiedade-de-separacao-autismo-porta-da-escola.html">
+        <div class="card-tag"><span>Autismo · Família</span></div>
+        <div class="card-body">
+          <h2 class="card-title">Ansiedade de Separação e Autismo: dicas para a porta da escola</h2>
+          <p class="card-excerpt">Para crianças autistas, a separação na porta da escola pode representar muito mais do que um momento difícil. Quebra de rotina, imprevisibilidade e afastamento da figura de segurança podem intensificar a ansiedade. Saiba como ajudar.</p>
+          <div class="card-author">
+            <img src="img/autor-gabriela.png" alt="Gabriela Meneghitti Godoy de Souza" width="40" height="40" loading="lazy">
+            <div class="card-author-info">
+              <div class="name">Gabriela Meneghitti Godoy de Souza</div>
+              <div class="crp">CRP 06/218745</div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <time datetime="2026-02-05">5 de fevereiro de 2026</time>
+            <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
-        <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-      </div>
-    </div>
-
-    <!-- CARD 6 — Lucas (Kit Sensorial) -->
-    <div class="card" onclick="openModal('modal-lucas2')">
-      <div class="card-tag"><span>Neurodivergência</span></div>
-      <div class="card-body">
-        <h2 class="card-title">Carnaval Inclusivo: como montar um kit de regulação sensorial</h2>
-        <p class="card-excerpt">O Carnaval pode ser intenso demais para pessoas neurodivergentes. O excesso de estímulos e a quebra de rotina geram sobrecarga sensorial. Saiba o que colocar num kit de regulação sensorial para viver a festa de forma mais segura e prazerosa.</p>
-        <div class="card-author">
-          <img src="img/autor-lucas.png" alt="Lucas">
-          <div class="card-author-info">
-            <div class="name">Lucas Labrunetti Zwerkovoski</div>
-            <div class="crp">CRP 06/201987</div>
+      </a>
+    </article>
+    <article class="card" data-cat="Educação Inclusiva">
+      <a class="card-link" href="artigos/adaptacao-escolar-sinais-revisao-pei.html">
+        <div class="card-tag"><span>Educação Inclusiva</span></div>
+        <div class="card-body">
+          <h2 class="card-title">Adaptação Escolar: 5 sinais de que o PEI do seu filho precisa de revisão</h2>
+          <p class="card-excerpt">A volta às aulas é desafiadora para muitas famílias, especialmente para alunos com necessidades educacionais específicas. O Plano de Ensino Individualizado (PEI) é uma ferramenta essencial — mas como saber quando ele precisa ser revisto? Conheça os 5 sinais.</p>
+          <div class="card-author">
+            <img src="img/autor-gabriela.png" alt="Gabriela Meneghitti Godoy de Souza" width="40" height="40" loading="lazy">
+            <div class="card-author-info">
+              <div class="name">Gabriela Meneghitti Godoy de Souza</div>
+              <div class="crp">CRP 06/218745</div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <time datetime="2026-02-03">3 de fevereiro de 2026</time>
+            <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
-        <span class="card-read">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-      </div>
-    </div>
+      </a>
+    </article>
   </div>
-</div>
 
-<!-- MODAIS -->
-
-<!-- Modal Lucas -->
-<div id="modal-lucas" class="modal-overlay" onclick="closeOnOverlay(event,this)">
-  <div class="modal">
-    <div class="modal-header">
-      <button class="modal-close" onclick="closeModal('modal-lucas')">✕</button>
-      <span class="modal-tag">Neurodivergência</span>
-      <h2 class="modal-title">"Eu odeio Carnaval": validando a preferência pelo silêncio</h2>
-    </div>
-    <div class="modal-author-bar">
-      <img src="img/autor-lucas.png" alt="Lucas">
-      <div>
-        <div class="name">Lucas Labrunetti Zwerkovoski</div>
-        <div class="crp">Psicólogo · CRP 06/201987</div>
-      </div>
-    </div>
-    <div class="modal-body"><p>O Carnaval é comumente associado a um período de alegria coletiva, sociabilidade intensa e participação praticamente obrigatória. Manifestar o desejo de não vivenciar essa experiência costuma gerar estranhamento, julgamentos e cobranças por parte da sociedade. Entretanto, no contexto da neurodivergência, negar-se a participar dessa comemoração é uma forma de o indivíduo preservar e atender às suas necessidades internas.</p>
-<p>Para muitas pessoas neurodivergentes, o Carnaval representa um aumento significativo de demandas sensoriais: sons intensos, multidões, cheiros fortes e imprevisibilidade na rotina. Esses fatores podem provocar sobrecarga, ansiedade, irritabilidade e esgotamento emocional em indivíduos hipersensíveis. O sofrimento atravessa cada um de maneira singular. Não há uma experiência universal do Carnaval; existem experiências individuais.</p>
-<p>O mal-estar emerge quando o sujeito se vê pressionado a corresponder a ideais sociais que não dialogam com seus limites internos. A ideia de que é preciso "aproveitar", "se soltar" ou "curtir como todo mundo" pode funcionar como um imperativo do senso comum, gerando sentimentos de inadequação, fracasso, repressão e/ou exclusão quando não é possível ou desejável atender a essa expectativa. Nesses casos, o silêncio e o recolhimento não devem ser interpretados como sinais de patologia, mas como respostas de preservação da subjetividade.</p>
-<p>A pressão social para "se divertir" tende a ser ainda mais intensa em datas culturalmente marcadas, como o Carnaval. Lidar com essa pressão envolve, em primeiro lugar, a possibilidade de escutar o próprio desejo e autorizar-se a sustentá-lo. Em muitos casos, é preciso trabalhar a culpa ilusória associada a dizer "não", bem como a ideia de que recusar convites equivale a rejeitar pessoas ou vínculos. Entretanto, um vínculo saudável se sustenta na possibilidade de conviver com as diferenças e pluralidades; verdadeiros laços sociais possuem a capacidade de compreender os motivos e as necessidades do outro nesse momento.</p>
-<p>O recolhimento pode cumprir uma função importante de regulação emocional, permitindo ao sujeito reorganizar-se internamente, reduzir o impacto dos excessos e preservar recursos psíquicos. Reconhecer esse movimento é reconhecer o direito ao próprio ritmo. É um direito do sujeito neurodivergente simbolizar suas datas e comemorações, visto que cada indivíduo possui uma maneira singular de perceber a realidade.</p>
-<p>Aprender a comunicar limites de forma clara e simples, sem a necessidade de longas justificativas, é um passo importante na construção da autonomia subjetiva.</p>
-<p>Sob uma perspectiva clínica e ética, promover um olhar mais inclusivo sobre o Carnaval implica reconhecer que o lazer não precisa assumir uma forma única. Para alguns sujeitos, a vivência festiva será fonte de prazer e encontro; para outros, o silêncio, o descanso e a previsibilidade serão fundamentais para o cuidado de si. Nenhuma dessas posições é superior à outra.</p>
-<p>Afirmar "eu odeio Carnaval" pode ser menos uma negação da festa e mais uma escolha sobre o próprio modo de estar no mundo. Reconhecer e legitimar essa escolha é um gesto de cuidado, escuta e respeito à singularidade, sendo estes princípios fundamentais tanto no cuidado psicológico quanto na construção de uma sociedade verdadeiramente inclusiva.</p></div>
-  </div>
-</div>
-
-<!-- Modal Gabriela 1 -->
-<div id="modal-gabi1" class="modal-overlay" onclick="closeOnOverlay(event,this)">
-  <div class="modal">
-    <div class="modal-header">
-      <button class="modal-close" onclick="closeModal('modal-gabi1')">✕</button>
-      <span class="modal-tag">Educação Inclusiva</span>
-      <h2 class="modal-title">Adaptação Escolar: 5 sinais de que o PEI do seu filho precisa de revisão</h2>
-    </div>
-    <div class="modal-author-bar">
-      <img src="img/autor-gabriela.png" alt="Gabriela">
-      <div>
-        <div class="name">Gabriela Meneghitti Godoy de Souza</div>
-        <div class="crp">Psicóloga · CRP 06/218745</div>
-      </div>
-    </div>
-    <div class="modal-body"><p>A volta às aulas costuma ser um momento desafiador para muitas famílias, mas, para os alunos que apresentam necessidades educacionais mais específicas, esse período pode ser extremamente sensível. Mudanças de rotina, novos professores, barulhos, cheiros e regras diferentes exigem um grande esforço de adaptação. Mesmo crianças que gostam do ambiente escolar podem apresentar sinais de estresse nesse início, envolvendo: alterações no sono, maior irritabilidade e resistência para ir à escola.</p>
-<p>É nesse contexto que o Plano de Ensino Individualizado (PEI) se torna uma ferramenta importante. O PEI é um documento que descreve as habilidades e necessidades do estudante, define prazos e metas a serem alcançadas, e deve conter quais tipos de serviços, recursos humanos, acessibilidade, objetivos, suportes e avaliações o estudante necessita para obter sucesso em seu processo de escolarização.</p>
-<p>O PEI é elaborado em equipe: professor de sala; professor de Educação Especial; equipe gestora da escola; os pais dos estudantes e, se possível, o próprio estudante. Também podem integrar essa equipe profissionais especialistas das áreas de Medicina, Psicologia, Fonoaudiologia, Terapia Ocupacional, Psicopedagogia, Fisioterapia, Assistência Social e áreas correlatas.</p>
-<p>É importante lembrar que o PEI não é um documento fixo — diante das demandas apresentadas, deve estar em constante atualização. Pensando nisso, alguns sinais podem ajudar as famílias a identificar quando ele pode não estar sendo efetivo:</p>
-<p><strong>1. Desregulação emocional:</strong> choro excessivo, crises de ansiedade e irritabilidade podem indicar que as adaptações descritas no PEI não estão sendo efetivas. Um desconforto inicial é esperado, mas o sofrimento recorrente não.</p>
-<p><strong>2. Aumento de comportamentos desafiadores:</strong> agressividade, recusa escolar, regressões comportamentais ou crises frequentes podem indicar que as necessidades reais do indivíduo estão desalinhadas com a demanda escolar.</p>
-<p><strong>3. Ausência de progresso:</strong> se, mesmo após algumas semanas, o indivíduo não apresenta avanços acadêmicos, perde habilidades já adquiridas ou demonstra desmotivação por atividades de interesse, os objetivos do PEI podem não estar adequados ao seu nível de desenvolvimento.</p>
-<p><strong>4. Sentimento de não pertencimento:</strong> quando o indivíduo se sente diferente ou constantemente excluído em relação aos colegas, algo precisa ser revisto. Um PEI não serve apenas para a parte educacional, mas também para trabalhar a autoestima, autonomia e o senso de inclusão.</p>
-<p><strong>5. Dificuldade de generalizar aprendizados:</strong> se o indivíduo aprende algo em um contexto, mas não consegue aplicar em outros ambientes, pode indicar que as estratégias estão muito rígidas ou pouco funcionais.</p>
-<p>Nem sempre os sinais são claros ou imediatos. Muitas vezes, é o corpo e o comportamento que comunicam o que as palavras ainda não alcançam.</p></div>
-  </div>
-</div>
-
-<!-- Modal Gabriela 2 -->
-<div id="modal-gabi2" class="modal-overlay" onclick="closeOnOverlay(event,this)">
-  <div class="modal">
-    <div class="modal-header">
-      <button class="modal-close" onclick="closeModal('modal-gabi2')">✕</button>
-      <span class="modal-tag">Autismo · Família</span>
-      <h2 class="modal-title">Ansiedade de Separação e Autismo: dicas para a porta da escola</h2>
-    </div>
-    <div class="modal-author-bar">
-      <img src="img/autor-gabriela.png" alt="Gabriela">
-      <div>
-        <div class="name">Gabriela Meneghitti Godoy de Souza</div>
-        <div class="crp">Psicóloga · CRP 06/218745</div>
-      </div>
-    </div>
-    <div class="modal-body"><p>O retorno às aulas pode ser, para muitos alunos, um momento muito delicado. Para crianças autistas, a separação na porta da escola representa a quebra de rotina, o afastamento prolongado da família após as férias, e a imprevisibilidade do novo semestre — fatores que podem intensificar a ansiedade de separação, manifestando-se por meio do choro intenso, recusa escolar, crises de desregulação ou até mesmo sintomas físicos, como dores de barriga ou náuseas.</p>
-<p>Para os pais, esses momentos são igualmente desafiadores, pois muitas vezes geram culpa, insegurança e dúvidas sobre como agir sem aumentar o sofrimento do filho. Compreender o que está por trás desse comportamento é um passo fundamental para lidar com a situação de forma mais segura e empática.</p>
-<p>A ansiedade de separação é caracterizada por um medo excessivo de se afastar de figuras de apego — geralmente os pais ou cuidadores. No caso de indivíduos com o Transtorno do Espectro Autista (TEA), essa ansiedade pode se manifestar de formas mais intensas, pois os autistas apresentam maior necessidade de previsibilidade, dificuldade de lidar com mudanças e sensibilidade sensorial aumentada. A figura dos pais representa segurança, organização do ambiente e mediação das demandas externas.</p>
-<p>Uma das principais orientações para o momento da porta da escola é a <strong>previsibilidade</strong>. A criança precisa saber quem irá levá-la à escola, quem irá buscá-la e em qual horário. Antecipar essas informações utilizando imagens, quadros de rotina e linguagem simples ajuda a reduzir a ansiedade e aumenta a sensação de controle.</p>
-<p>Outra estratégia é <strong>construir rituais curtos de despedida</strong> — beijos, abraços, toques e até brincadeiras. Sair escondido ou "fugir" pode quebrar a confiança da criança e intensificar a ansiedade nos dias seguintes. A postura emocional dos pais exerce grande influência: quando demonstram insegurança ou angústia, a criança tende a interpretar o ambiente como ameaçador.</p>
-<p>O <strong>alinhamento com a escola</strong> também é fundamental. Os professores e a equipe pedagógica devem estar cientes das dificuldades daquela criança. Em alguns casos, permitir que a criança entre alguns minutos antes do horário ou que leve um objeto representativo do vínculo com os pais pode ajudar na adaptação.</p>
-<p>A adaptação não acontece de forma linear, alternando entre dias mais fáceis e mais difíceis. Quando a ansiedade de separação é persistente, a orientação de um profissional da saúde mental pode ser essencial para ajudar a criança, a família e a escola a construírem estratégias mais adequadas. O importante é respeitar o tempo da criança.</p></div>
-  </div>
-</div>
-
-
-<!-- Modal Yasmim 1 -->
-<div id="modal-yasmim1" class="modal-overlay" onclick="closeOnOverlay(event,this)">
-  <div class="modal">
-    <div class="modal-header">
-      <button class="modal-close" onclick="closeModal('modal-yasmim1')">✕</button>
-      <span class="modal-tag">Neurodivergência</span>
-      <h2 class="modal-title">Ressaca Social Pós-Feriado: Recuperando as Baterias</h2>
-    </div>
-    <div class="modal-author-bar">
-      <img src="img/autor-yasmim.png" alt="Yasmim">
-      <div>
-        <div class="name">Yasmim Vieira</div>
-        <div class="crp">Psicóloga Clínica · CRP 06/202107</div>
-      </div>
-    </div>
-    <div class="modal-body"><p>A ressaca social pós-feriado é uma experiência comum entre adultos neurodivergentes e se caracteriza por exaustão física, emocional e sensorial após períodos intensos de interação social e quebra de rotina. Feriados e datas comemorativas costumam ser associados a descanso, lazer e conexão. No entanto, para muitos adultos neurodivergentes — como pessoas autistas, com TDAH, altas habilidades ou outras variações neurológicas — esses períodos podem resultar em um cansaço profundo conhecido como ressaca social pós-feriado.</p>
-<p>Diferente do cansaço comum, essa exaustão envolve sobrecarga sensorial, esforço cognitivo intenso e desgaste emocional acumulado. Compreender esse fenômeno é fundamental para promover saúde mental, prevenir o burnout e construir práticas de autocuidado mais alinhadas à neurodiversidade.</p>
-<p>A exaustão social surge após demandas sociais prolongadas. Em pessoas neurodivergentes, ela tende a ser mais intensa devido a fatores como o elevado esforço cognitivo para interpretar normas sociais implícitas, a sensibilidade sensorial aumentada a ruídos, luzes, cheiros e multidões, as quebras de rotina frequentes em feriados e viagens, e o esforço contínuo para ocultar características pessoais a fim de atender às expectativas sociais. Os efeitos podem incluir dificuldade de concentração, irritabilidade, necessidade de isolamento, alterações no sono, dores físicas e sensação de esgotamento extremo — frequentemente descrita como "bateria social descarregada".</p>
-<p>Durante festas e encontros, mesmo as experiências positivas podem exigir um nível elevado de adaptação. O sistema nervoso permanece em estado de alerta por longos períodos, gerando um custo energético significativo. Quando o feriado termina, as demandas cotidianas retornam, mas o organismo ainda está em processo de recuperação. Ignorar essa necessidade pode contribuir para burnout neurodivergente, queda de desempenho, crises emocionais ou sensoriais, além de autocrítica e sentimentos de inadequação.</p>
-<p>Reconhecer a ressaca social como uma resposta legítima — e não como falta de capacidade — é um passo essencial. No processo de recuperação, algumas estratégias ajudam:</p>
-<p><strong>Planejar o descanso</strong> sempre que possível, reservando um período com menos compromissos e entendendo que o descanso é uma necessidade neurológica, não um privilégio.</p>
-<p><strong>Retomar a rotina de forma gradual</strong>, começando pelo essencial — sono, alimentação e atividades conhecidas — sem exigir produtividade imediata.</p>
-<p><strong>Reduzir estímulos sensoriais</strong>, com ambientes mais silenciosos, iluminação suave, roupas confortáveis e pausas de tela.</p>
-<p><strong>Priorizar atividades de baixo custo social</strong>, como leitura, música, caminhadas ou séries familiares, que restauram a energia sem gerar nova exaustão.</p>
-<p><strong>Respeitar e comunicar limites</strong>, dizendo "não" a convites adicionais — uma forma de autocuidado que reduz a culpa e previne novos esgotamentos.</p>
-<p><strong>Nomear a experiência</strong>: reconhecer "estou em ressaca social" promove autocompaixão e facilita o diálogo com pessoas próximas e ambientes de trabalho.</p>
-<p>Se a exaustão se prolonga por semanas ou vem acompanhada de sofrimento intenso, crises frequentes ou perda de funcionalidade, buscar apoio profissional é recomendado. A ressaca social pós-feriado é uma vivência comum e válida. Falar sobre o tema amplia a conscientização, reduz estigmas e fortalece uma cultura de cuidado mais respeitosa à diversidade neurológica. Recuperar as baterias não significa evitar vínculos ou celebrações, mas aprender a equilibrá-los com pausas, previsibilidade e respeito ao próprio ritmo.</p></div>
-  </div>
-</div>
-
-<!-- Modal Yasmim 2 -->
-<div id="modal-yasmim2" class="modal-overlay" onclick="closeOnOverlay(event,this)">
-  <div class="modal">
-    <div class="modal-header">
-      <button class="modal-close" onclick="closeModal('modal-yasmim2')">✕</button>
-      <span class="modal-tag">TDAH</span>
-      <h2 class="modal-title">O Ano só começa agora? TDAH e a retomada da rotina</h2>
-    </div>
-    <div class="modal-author-bar">
-      <img src="img/autor-yasmim.png" alt="Yasmim">
-      <div>
-        <div class="name">Yasmim Vieira</div>
-        <div class="crp">Psicóloga Clínica · CRP 06/202107</div>
-      </div>
-    </div>
-    <div class="modal-body"><p>No Brasil, é comum ouvir que "o ano só começa depois do Carnaval". Janeiro é atravessado por férias, fevereiro pelo Carnaval e, quando março chega, muitas pessoas sentem que estão atrasadas em relação a metas, planos e objetivos. Para pessoas com Transtorno do Déficit de Atenção e Hiperatividade (TDAH), essa sensação tende a ser ainda mais intensa — frequentemente acompanhada de culpa, frustração e autocrítica.</p>
-<p>Em pessoas com TDAH, a dificuldade central geralmente não está na falta de interesse ou de esforço, mas na <strong>ativação necessária para iniciar tarefas</strong>, especialmente quando são abstratas, longas ou não oferecem recompensas imediatas. Alterações nas funções executivas, na percepção do tempo e nos sistemas de motivação fazem com que o cérebro com TDAH dependa mais de urgência, interesse ou novidade para engajar.</p>
-<p>Por isso, grandes marcos temporais — início do ano, a segunda-feira, o pós-carnaval — costumam ser utilizados como formas de "reinício". A ideia de que "agora será diferente" pode gerar alívio momentâneo, mas também tende a criar um acúmulo de expectativas que paralisa em vez de impulsionar.</p>
-<p>No contexto cultural brasileiro, esse fenômeno é reforçado. Para pessoas com TDAH, a narrativa de "tempo desperdiçado" pode intensificar a percepção de fracasso, mesmo quando não houve inatividade. Entre os impactos emocionais mais comuns estão a vergonha por não ter mantido rotinas, a sensação de fracasso precoce, a comparação constante com pessoas neurotípicas e a evitação de tarefas como forma de lidar com a sobrecarga emocional.</p>
-<p>Dificuldades de base neurobiológica passam a ser interpretadas como falhas morais. A procrastinação deixa de ser compreendida como um desafio executivo e se torna vivida como sinal de incompetência, alimentando um ciclo de autocrítica e bloqueio.</p>
-<p>Na prática clínica, observa-se que a retomada tende a ser mais eficaz quando acontece de forma gradual, flexível e sem violência interna. Algumas estratégias que funcionam:</p>
-<p><strong>Substituir "ano novo, vida nova" por perguntas mais realistas:</strong> "o que é possível retomar agora?" Rotinas não precisam nascer completas — podem ser construídas aos poucos, com ajustes constantes.</p>
-<p><strong>Começar pequeno:</strong> para o cérebro com TDAH, reduzir a barreira de entrada facilita a ativação. Dez minutos de organização, uma única tarefa por dia ou um único horário fixo já podem ser suficientes para iniciar o movimento.</p>
-<p><strong>Usar o ambiente como aliado:</strong> pistas visuais, redução de etapas desnecessárias e uma organização voltada para facilitar o início — e não a perfeição — ajudam a diminuir o esforço cognitivo.</p>
-<p><strong>Criar marcos concretos em vez de esperar datas simbólicas:</strong> associar tarefas a eventos que já acontecem (após o almoço, ao chegar em casa) tende a ser mais eficaz do que aguardar pela "segunda-feira ideal".</p>
-<p>O Carnaval não é o responsável pela dificuldade de retomar a rotina. Ele apenas evidencia algo que já é desafiador para muitas pessoas com TDAH: a continuidade. Para pessoas neurodivergentes, rotina não significa rigidez, mas uma estrutura flexível, ajustável, revisável e humana.</p>
-<p>Se o seu ano está começando agora, tudo bem. Se ele começou antes e descarrilhou, isso também faz parte. Retomar a rotina com TDAH geralmente não é uma questão de determinação ou disciplina, mas de estratégia, autocompaixão e respeito ao funcionamento do próprio cérebro. Talvez o ano comece toda vez que se tenta de novo, de um jeito possível.</p></div>
-  </div>
-</div>
-
-
-<!-- Modal Lucas 2 -->
-<div id="modal-lucas2" class="modal-overlay" onclick="closeOnOverlay(event,this)">
-  <div class="modal">
-    <div class="modal-header">
-      <button class="modal-close" onclick="closeModal('modal-lucas2')">✕</button>
-      <span class="modal-tag">Neurodivergência</span>
-      <h2 class="modal-title">Carnaval Inclusivo: como montar um kit de regulação sensorial</h2>
-    </div>
-    <div class="modal-author-bar">
-      <img src="img/autor-lucas.png" alt="Lucas">
-      <div>
-        <div class="name">Lucas Labrunetti Zwerkovoski</div>
-        <div class="crp">Psicólogo · CRP 06/201987</div>
-      </div>
-    </div>
-    <div class="modal-body"><p>A comemoração do Carnaval é atrelada à alegria, ao encontro e à expressão cultural, mas também pode ser um ambiente intenso para pessoas neurodivergentes. O excesso de estímulos e as mudanças na rotina podem gerar sobrecarga sensorial e crises de estresse. Pensando nisso, montar um kit de regulação sensorial pode auxiliar no manejo dessa condição e possibilitar vivenciar o Carnaval de forma mais segura, confortável e prazerosa.</p>
-<h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--pd);margin:1.4em 0 0.6em;">O que não pode faltar na bolsa?</h3>
-<p><strong>Abafadores de som ou fones com cancelamento de ruído:</strong> essenciais para reduzir o impacto de caixas de som, baterias e gritos. Eles ajudam a manter o sistema nervoso mais regulado e permitem pausas auditivas durante o bloquinho ou a festa.</p>
-<p><strong>Objetos de conforto:</strong> qualquer objeto que ajude na regulação emocional do indivíduo, como bonecos, cobertores ou outros itens que tragam sensação de segurança. O uso desses objetos pode desviar a atenção de estímulos intensos e ajudar a manter o foco no presente.</p>
-<p><strong>Óculos escuros ou com filtro de luz:</strong> ajudam a reduzir o impacto visual de luzes intensas, reflexos e do excesso de estímulos visuais comuns no Carnaval, especialmente durante o dia.</p>
-<p><strong>Plano de saídas e pausas:</strong> observe previamente locais mais tranquilos para descanso, banheiros acessíveis ou caminhos de saída. Criar situações que forneçam previsibilidade é essencial, pois antecipa o que irá acontecer e ajuda na organização da rotina.</p>
-<p>Um Carnaval inclusivo começa no reconhecimento de que cada pessoa vivencia os estímulos de forma diferente. Levar um kit sensorial não é exagero — é uma forma de autocuidado, autonomia e respeito aos próprios limites. O Carnaval é uma festa diversa, e sua beleza está justamente no enaltecimento das pluralidades. Viver e festejar em coletivo representa compreensão e respeito por cada particularidade.</p></div>
-  </div>
-</div>
+  <section class="cta-box blog-cta">
+    <h2>Quer cuidar da sua saúde mental?</h2>
+    <p>Psicologia, psiquiatria, neuropsicologia, nutrição e endocrinologia para toda a família, em Sorocaba. Atendemos convênios e particular — fale com a recepção e encontre o melhor horário.</p>
+    <a class="cta-btn" href="https://wa.me/5515998030909" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    <a class="cta-alt" href="equipe.html">Conheça nossa equipe →</a>
+  </section>
+</main>
 
 <footer>
-  <img class="fpsi" src="img/psi.png" alt="Ψ">
+  <img class="fpsi" src="img/psi.png" alt="" width="30" height="30">
   <p>© Ledesma Suarez · Centro de Saúde e Desenvolvimento<br>
-  Sorocaba – SP · (15) 99803-0909</p>
-  <a href="index.html">← Voltar ao site</a>
+  Rua Capitão Alfredo Cardoso, 34 · Jardim Faculdade · Sorocaba – SP<br>
+  WhatsApp (15) 99803-0909 · recepcao@ledesmasuarez.com</p>
+  <div class="foot-links">
+    <a href="index.html">Início</a>
+    <a href="equipe.html">Equipe</a>
+    <a href="blog.html">Publicações</a>
+    <a href="https://instagram.com/clinicaledesmasuarez" target="_blank" rel="noopener">Instagram</a>
+  </div>
 </footer>
 
-<script>
-function openModal(id) {
-  document.getElementById(id).classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeModal(id) {
-  document.getElementById(id).classList.remove('open');
-  document.body.style.overflow = '';
-}
-function closeOnOverlay(e, overlay) {
-  if (e.target === overlay) {
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-}
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal-overlay.open').forEach(function(m) {
-      m.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  }
-});
-</script>
+<a class="wa-float" href="https://wa.me/5515998030909" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span>Agendar</span>
+</a>
 
+<script src="assets/site.js" defer></script>
 </body>
 </html>
