@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publicações — Clínica Ledesma Suarez</title>
+    <link>https://ledesmasuarez.com.br/blog.html</link>
+    <atom:link href="https://ledesmasuarez.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Artigos sobre saúde mental, TDAH, autismo, neurodivergência e desenvolvimento, pela equipe da Clínica Ledesma Suarez em Sorocaba/SP.</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 02 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <item>
+      <title>O Ano só começa agora? TDAH e a retomada da rotina</title>
+      <link>https://ledesmasuarez.com.br/artigos/tdah-retomada-da-rotina.html</link>
+      <guid isPermaLink="true">https://ledesmasuarez.com.br/artigos/tdah-retomada-da-rotina.html</guid>
+      <description>No Brasil, o ano &quot;começa de verdade&quot; só depois do Carnaval. Para pessoas com TDAH, essa sensação de atraso costuma vir acompanhada de culpa e autocrítica. Entenda por que isso acontece e como retomar a rotina de forma compassiva e possível.</description>
+      <category>TDAH</category>
+      <dc:creator>Yasmim Vieira</dc:creator>
+      <pubDate>Tue, 24 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ressaca Social Pós-Feriado: Recuperando as Baterias</title>
+      <link>https://ledesmasuarez.com.br/artigos/ressaca-social-pos-feriado.html</link>
+      <guid isPermaLink="true">https://ledesmasuarez.com.br/artigos/ressaca-social-pos-feriado.html</guid>
+      <description>Feriados e festas podem ser exaustivos para adultos neurodivergentes. A ressaca social é real e legítima — envolve sobrecarga sensorial, desgaste cognitivo e emocional acumulado. Entenda o fenômeno e veja estratégias para recuperar as baterias.</description>
+      <category>Neurodivergência</category>
+      <dc:creator>Yasmim Vieira</dc:creator>
+      <pubDate>Fri, 20 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Carnaval Inclusivo: como montar um kit de regulação sensorial</title>
+      <link>https://ledesmasuarez.com.br/artigos/carnaval-inclusivo-kit-regulacao-sensorial.html</link>
+      <guid isPermaLink="true">https://ledesmasuarez.com.br/artigos/carnaval-inclusivo-kit-regulacao-sensorial.html</guid>
+      <description>O Carnaval pode ser intenso demais para pessoas neurodivergentes. O excesso de estímulos e a quebra de rotina geram sobrecarga sensorial. Saiba o que colocar num kit de regulação sensorial para viver a festa de forma mais segura e prazerosa.</description>
+      <category>Neurodivergência</category>
+      <dc:creator>Lucas Labrunetti Zwerkovoski</dc:creator>
+      <pubDate>Thu, 12 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>&quot;Eu odeio Carnaval&quot;: validando a preferência pelo silêncio</title>
+      <link>https://ledesmasuarez.com.br/artigos/odeio-carnaval-preferencia-pelo-silencio.html</link>
+      <guid isPermaLink="true">https://ledesmasuarez.com.br/artigos/odeio-carnaval-preferencia-pelo-silencio.html</guid>
+      <description>O Carnaval é comumente associado a alegria coletiva e participação praticamente obrigatória. Mas para muitas pessoas neurodivergentes, essa época representa sobrecarga sensorial, ansiedade e esgotamento. Entenda por que o silêncio também é uma escolha válida.</description>
+      <category>Neurodivergência</category>
+      <dc:creator>Lucas Labrunetti Zwerkovoski</dc:creator>
+      <pubDate>Tue, 10 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ansiedade de Separação e Autismo: dicas para a porta da escola</title>
+      <link>https://ledesmasuarez.com.br/artigos/ansiedade-de-separacao-autismo-porta-da-escola.html</link>
+      <guid isPermaLink="true">https://ledesmasuarez.com.br/artigos/ansiedade-de-separacao-autismo-porta-da-escola.html</guid>
+      <description>Para crianças autistas, a separação na porta da escola pode representar muito mais do que um momento difícil. Quebra de rotina, imprevisibilidade e afastamento da figura de segurança podem intensificar a ansiedade. Saiba como ajudar.</description>
+      <category>Autismo · Família</category>
+      <dc:creator>Gabriela Meneghitti Godoy de Souza</dc:creator>
+      <pubDate>Thu, 05 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Adaptação Escolar: 5 sinais de que o PEI do seu filho precisa de revisão</title>
+      <link>https://ledesmasuarez.com.br/artigos/adaptacao-escolar-sinais-revisao-pei.html</link>
+      <guid isPermaLink="true">https://ledesmasuarez.com.br/artigos/adaptacao-escolar-sinais-revisao-pei.html</guid>
+      <description>A volta às aulas é desafiadora para muitas famílias, especialmente para alunos com necessidades educacionais específicas. O Plano de Ensino Individualizado (PEI) é uma ferramenta essencial — mas como saber quando ele precisa ser revisto? Conheça os 5 sinais.</description>
+      <category>Educação Inclusiva</category>
+      <dc:creator>Gabriela Meneghitti Godoy de Souza</dc:creator>
+      <pubDate>Tue, 03 Feb 2026 09:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

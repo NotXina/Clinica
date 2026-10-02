@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# Bots de IA / respostas generativas — liberados para ampliar alcance
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Arquivos de apoio (não indexar, mas rastrear links)
+Disallow: /tools/
+
 Sitemap: https://ledesmasuarez.com.br/sitemap.xml
