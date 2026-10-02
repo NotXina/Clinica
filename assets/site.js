@@ -126,6 +126,53 @@
       .catch(function () { /* mantém a seção oculta */ });
   }
 
+  /* Visualização ampliada das fotos */
+  var fotos = document.querySelectorAll('.js-ampliar-foto');
+  if (fotos.length) {
+    var lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'Foto ampliada');
+    lightbox.hidden = true;
+    lightbox.innerHTML = '<button class="lightbox-close" type="button" aria-label="Fechar foto ampliada">&times;</button><img class="lightbox-image" alt="">';
+    document.body.appendChild(lightbox);
+
+    var lightboxImage = lightbox.querySelector('.lightbox-image');
+    var fecharLightbox = function () {
+      lightbox.hidden = true;
+      document.body.classList.remove('lightbox-open');
+    };
+    var abrirLightbox = function (foto) {
+      lightboxImage.src = foto.currentSrc || foto.src;
+      lightboxImage.alt = foto.alt || 'Foto ampliada';
+      lightbox.hidden = false;
+      document.body.classList.add('lightbox-open');
+      lightbox.querySelector('.lightbox-close').focus();
+    };
+
+    fotos.forEach(function (foto) {
+      foto.setAttribute('tabindex', '0');
+      foto.setAttribute('role', 'button');
+      foto.setAttribute('aria-label', (foto.alt || 'Foto') + '. Clique para ampliar');
+      foto.addEventListener('click', function () { abrirLightbox(foto); });
+      foto.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          abrirLightbox(foto);
+        }
+      });
+    });
+
+    lightbox.querySelector('.lightbox-close').addEventListener('click', fecharLightbox);
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) fecharLightbox();
+    });
+    document.addEventListener('keydown', function (event) {
+      if (!lightbox.hidden && event.key === 'Escape') fecharLightbox();
+    });
+  }
+
   /* Perguntas frequentes (acordeão) */
   document.querySelectorAll('.faq-q').forEach(function (q) {
     q.addEventListener('click', function () {
