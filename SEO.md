@@ -119,7 +119,7 @@ Isso regenera as páginas em `artigos/`, o `sitemap.xml`, o `feed.xml` e os trec
 | **Publicar 2 a 4 artigos por mês** | Frequência é o que faz o blog crescer. Temas com mais busca em Sorocaba: "laudo de TDAH", "avaliação neuropsicológica preço", "psiquiatra infantil", "terapia pelo convênio". |
 | **Citações locais** (listar a clínica no Doctoralia, Apontador, páginas da Unimed/Hapvida) | NAP consistente (nome, endereço, telefone) reforça o SEO local. |
 | **Comprimir as imagens e servir em WebP** | `fachada.jpg`, `espaco*.jpg` e `fundadores.jpg` são o maior peso da página. |
-| **Reduzir o widget de avaliações (Elfsight)** | É um script de terceiros pesado; se o PageSpeed acusar, considere trocar por avaliações estáticas. |
+| **Avaliações do Google sem widget pesado** | Por enquanto o widget foi deixado de lado; use links diretos para o Perfil da Empresa e, no futuro, avalie API/widget apenas se não prejudicar performance. |
 
 ---
 

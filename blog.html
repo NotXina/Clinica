@@ -34,6 +34,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/artigo.css">
 <style>
+.nav-links{gap:16px}.nav-links a{font-size:.76rem}
 .blog-hero{background:linear-gradient(155deg,var(--pd) 0%,var(--pm) 60%,var(--lav) 100%);padding:60px 8% 52px;position:relative;overflow:hidden;}
 .blog-hero::before{content:'';position:absolute;right:5%;top:50%;transform:translateY(-50%);width:260px;height:260px;background:url("img/psi.png") center/contain no-repeat;opacity:.05;pointer-events:none;filter:brightness(0) invert(1);}
 .blog-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:#fff;letter-spacing:.02em;margin-bottom:10px;}
@@ -64,6 +65,16 @@
 .card-read svg{width:14px;height:14px;transition:transform .2s;}
 .card:hover .card-read svg{transform:translateX(3px);}
 .blog-cta{margin:10px 0 46px;}
+
+.audience-section{padding:28px 0 2px;}
+.audience-title{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--lav);font-weight:600;margin-bottom:14px;}
+.audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.audience-card{display:block;background:var(--wh);border:1px solid var(--lils);border-radius:16px;padding:18px;text-decoration:none;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;}
+.audience-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(107,58,138,.16);}
+.audience-card strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.12rem;color:var(--pd);margin-bottom:6px;}
+.audience-card span{display:block;font-size:.76rem;line-height:1.55;color:var(--tm);}
+@media(max-width:768px){.audience-grid{grid-template-columns:1fr}.nav-links a{font-size:.95rem}}
+
 </style>
 
 <script type="application/ld+json">
@@ -184,9 +195,12 @@
   <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span></span><span></span><span></span></button>
   <div class="nav-links" id="menu-principal">
     <a href="index.html">Início</a>
+    <a href="especialidades.html">Especialidades</a>
+    <a href="convenios.html">Convênios</a>
+    <a href="materiais.html">Materiais</a>
     <a href="equipe.html">Equipe</a>
     <a href="blog.html">Publicações</a>
-    <a href="https://wa.me/5515998030909" target="_blank" rel="noopener" class="nav-cta">Agendar</a>
+    <a href="index.html#pre-agendamento" class="nav-cta">Pré-agendar</a>
   </div>
 </nav>
 
@@ -210,6 +224,17 @@
     <button type="button" class="filtro" data-filtro="Autismo · Família" aria-pressed="false">Autismo · Família</button>
     <button type="button" class="filtro" data-filtro="Educação Inclusiva" aria-pressed="false">Educação Inclusiva</button>
   </div>
+
+
+  <section class="audience-section" aria-labelledby="audiencia-title">
+    <p class="audience-title" id="audiencia-title">Artigos por público</p>
+    <div class="audience-grid">
+      <a class="audience-card" href="artigos/ansiedade-de-separacao-autismo-porta-da-escola.html"><strong>Para pais</strong><span>Adaptação escolar, autismo, ansiedade de separação e desenvolvimento infantil.</span></a>
+      <a class="audience-card" href="artigos/tdah-retomada-da-rotina.html"><strong>Para adolescentes e adultos</strong><span>TDAH, rotina, ressaca social e estratégias para o cotidiano.</span></a>
+      <a class="audience-card" href="artigos/adaptacao-escolar-sinais-revisao-pei.html"><strong>Para professores</strong><span>Sinais escolares, inclusão, PEI e comunicação com famílias.</span></a>
+      <a class="audience-card" href="especialidades/terapia-de-casal-sorocaba.html"><strong>Para casais</strong><span>Quando procurar terapia de casal e como iniciar o cuidado.</span></a>
+    </div>
+  </section>
 
   <div class="articles-grid">
     <article class="card" data-cat="TDAH">

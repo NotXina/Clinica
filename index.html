@@ -539,6 +539,109 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
 .footer-right p{color:var(--lil);font-size:0.74rem;line-height:1.9;}
 .heart{color:#e0a0ff;}
 
+
+
+/* MELHORIAS DE CONVERSÃO E CONTEÚDO */
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:18px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,3vw,2.35rem);font-weight:400;color:var(--pd);line-height:1.12;margin-top:-8px;}
+.section-lead{font-size:.92rem;color:var(--tm);line-height:1.75;max-width:760px;margin:-8px 0 20px;}
+.soft-note{font-size:.76rem;color:var(--lav);line-height:1.55;margin-top:10px;}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.btn-primary,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border-radius:40px;font-size:.82rem;font-weight:700;letter-spacing:.03em;padding:11px 20px;transition:transform .18s,box-shadow .18s,background .18s;}
+.btn-primary{background:linear-gradient(135deg,var(--pd),var(--pm));color:#fff;box-shadow:0 4px 16px rgba(107,58,138,.24);}
+.btn-secondary{background:var(--wh);color:var(--pm);border:1px solid var(--lils);box-shadow:0 2px 10px rgba(107,58,138,.06);}
+.btn-primary:hover,.btn-secondary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(107,58,138,.18);}
+
+.guide-box{display:grid;grid-template-columns:minmax(250px,.9fr) 1.1fr;gap:18px;align-items:stretch;}
+.guide-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.guide-option{font-family:'Jost',sans-serif;text-align:left;border:1.5px solid var(--lils);background:var(--wh);color:var(--td);border-radius:16px;padding:14px;cursor:pointer;box-shadow:0 2px 10px rgba(107,58,138,.06);transition:border-color .2s,transform .2s,background .2s;}
+.guide-option strong{display:block;color:var(--pd);font-size:.86rem;margin-bottom:4px;}
+.guide-option span{display:block;color:var(--tm);font-size:.72rem;line-height:1.45;}
+.guide-option:hover,.guide-option.active{border-color:var(--lav);background:#fff;transform:translateY(-2px);}
+.guide-result{background:linear-gradient(135deg,var(--wh),#fff);border-radius:20px;box-shadow:var(--shadow);padding:26px;border:1px solid var(--lils);display:flex;flex-direction:column;justify-content:center;}
+.guide-kicker{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--lav);font-weight:700;margin-bottom:8px;}
+.guide-result h3{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;color:var(--pd);margin-bottom:8px;}
+.guide-result p{font-size:.9rem;line-height:1.7;color:var(--tm);margin-bottom:14px;}
+.guide-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;}
+.guide-tags span{background:var(--lilp);color:var(--pm);font-size:.68rem;font-weight:700;border-radius:40px;padding:4px 10px;}
+
+.specialty-actions{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.specialty-btn{background:var(--wh);border:1px solid var(--lils);border-radius:14px;padding:13px;text-decoration:none;color:var(--pd);box-shadow:0 1px 8px rgba(107,58,138,.06);font-size:.78rem;font-weight:700;line-height:1.35;display:flex;align-items:center;gap:9px;transition:transform .18s,border-color .18s;}
+.specialty-btn:hover{transform:translateY(-2px);border-color:var(--lav);}
+.specialty-btn span{font-size:1.1rem;}
+.espc a{color:inherit;text-decoration:none;display:block;}
+.espc .mini-link{display:inline-block;margin-top:6px;color:var(--lav);font-size:.68rem;font-weight:700;letter-spacing:.04em;}
+
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.info-card{background:var(--wh);border-radius:18px;padding:22px;box-shadow:var(--shadow);border:1px solid transparent;}
+.info-card:hover{border-color:var(--lils);}
+.info-card .ico{font-size:1.55rem;margin-bottom:10px;}
+.info-card h3{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;color:var(--pd);margin-bottom:8px;}
+.info-card p,.info-card li{font-size:.84rem;color:var(--tm);line-height:1.65;}
+.info-card ul{list-style:none;display:grid;gap:6px;margin-top:8px;}
+.info-card li::before{content:'•';color:var(--lav);font-weight:700;margin-right:7px;}
+
+.signs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.sign-card{background:var(--wh);border-radius:16px;padding:18px;box-shadow:0 2px 12px rgba(107,58,138,.07);border-top:3px solid var(--lav);}
+.sign-card strong{display:block;color:var(--pd);font-size:.85rem;margin-bottom:7px;}
+.sign-card p{font-size:.76rem;color:var(--tm);line-height:1.55;}
+
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;counter-reset:passo;}
+.step{background:var(--wh);border-radius:16px;padding:18px 14px;box-shadow:var(--shadow);position:relative;min-height:160px;}
+.step::before{counter-increment:passo;content:counter(passo);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--pd);color:#fff;font-weight:700;font-size:.8rem;margin-bottom:12px;}
+.step h3{font-size:.82rem;color:var(--pd);margin-bottom:7px;line-height:1.35;}
+.step p{font-size:.72rem;color:var(--tm);line-height:1.55;}
+
+.process-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch;}
+.process-list{background:var(--wh);border-radius:18px;box-shadow:var(--shadow);padding:24px;}
+.process-list h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--pd);font-weight:600;margin-bottom:12px;}
+.process-list ul{list-style:none;display:grid;gap:10px;}
+.process-list li{font-size:.86rem;color:var(--tm);line-height:1.6;display:flex;gap:9px;}
+.process-list li::before{content:'✓';color:var(--lav);font-weight:800;flex-shrink:0;}
+
+.tour-card{background:var(--wh);border-radius:18px;box-shadow:var(--shadow);padding:18px;margin-top:12px;}
+.tour-card p{font-size:.82rem;color:var(--tm);line-height:1.65;}
+.gallery-caption{font-size:.72rem;color:var(--lav);margin-top:8px;text-align:center;}
+
+.material-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
+.material-card{background:var(--wh);border-radius:16px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;transition:transform .18s,box-shadow .18s;}
+.material-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(107,58,138,.16);}
+.material-card .ico{font-size:1.4rem;}
+.material-card h3{font-size:.84rem;color:var(--pd);line-height:1.35;}
+.material-card p{font-size:.72rem;color:var(--tm);line-height:1.5;flex:1;}
+.material-card span{font-size:.68rem;color:var(--lav);font-weight:700;}
+
+.pre-card{background:linear-gradient(135deg,#fff,var(--wh));border-radius:22px;box-shadow:0 6px 30px rgba(107,58,138,.13);padding:26px;border:1px solid var(--lils);}
+.pre-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.field{display:flex;flex-direction:column;gap:6px;}
+.field.full{grid-column:1/-1;}
+.field label{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lav);font-weight:700;}
+.field input,.field select,.field textarea{font-family:'Jost',sans-serif;border:1.5px solid var(--lils);border-radius:13px;background:#fff;color:var(--td);padding:12px 14px;font-size:.9rem;outline:none;transition:border-color .18s,box-shadow .18s;}
+.field textarea{min-height:86px;resize:vertical;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lav);box-shadow:0 0 0 3px rgba(155,114,192,.16);}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;flex-wrap:wrap;}
+.form-foot p{font-size:.75rem;color:var(--tm);line-height:1.5;max-width:620px;}
+.form-btn{font-family:'Jost',sans-serif;border:0;cursor:pointer;background:#25D366;color:#fff;border-radius:40px;padding:13px 24px;font-weight:800;font-size:.9rem;box-shadow:0 5px 20px rgba(37,211,102,.28);}
+
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.quick-card{background:var(--wh);border-radius:16px;padding:17px;box-shadow:0 2px 12px rgba(107,58,138,.07);}
+.quick-card strong{display:block;color:var(--pd);font-size:.82rem;margin-bottom:5px;}
+.quick-card p{font-size:.74rem;color:var(--tm);line-height:1.55;}
+
+.emergency-box{background:#fff7fb;border:1px solid #efd2e5;border-left:4px solid #b45b89;border-radius:18px;padding:20px 22px;box-shadow:0 2px 12px rgba(180,91,137,.08);}
+.emergency-box h3{color:#7b2a55;font-size:.96rem;margin-bottom:8px;}
+.emergency-box p{font-size:.84rem;color:#63354f;line-height:1.7;}
+.emergency-box strong{color:#7b2a55;}
+
+/* RESPONSIVE TABLET */
+@media(max-width:1024px){
+  .specialty-actions{grid-template-columns:repeat(2,1fr);}
+  .cards-grid{grid-template-columns:repeat(2,1fr);}
+  .signs-grid,.quick-grid{grid-template-columns:repeat(2,1fr);}
+  .timeline{grid-template-columns:repeat(3,1fr);}
+  .material-grid{grid-template-columns:repeat(2,1fr);}
+}
+
 /* RESPONSIVE MOBILE */
 @media(max-width:768px){
   .hero{grid-template-columns:1fr;min-height:auto;}
@@ -555,6 +658,15 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
   .gallery-grid{grid-template-columns:1fr 1fr;}
   .pub-grid{grid-template-columns:1fr;}
   .ig-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
+  .section-head{display:block;}
+  .guide-box,.process-grid{grid-template-columns:1fr;}
+  .guide-options{grid-template-columns:1fr;}
+  .specialty-actions{grid-template-columns:1fr 1fr;}
+  .cards-grid,.signs-grid,.material-grid,.quick-grid{grid-template-columns:1fr;}
+  .timeline{grid-template-columns:1fr 1fr;}
+  .pre-grid{grid-template-columns:1fr;}
+  .form-foot{align-items:stretch;}
+  .form-btn{width:100%;}
   footer{grid-template-columns:1fr;text-align:center;padding:32px 24px 44px;gap:16px;}
   .footer-psi{margin:0 auto;}
   .footer-right{text-align:center;}
@@ -564,8 +676,8 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
 .nav-brand img{width:28px;height:28px;filter:brightness(0) invert(1);opacity:.9;}
 .nav-brand span{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;font-weight:400;color:#fff;}
-.nav-links{display:flex;align-items:center;gap:24px;}
-.nav-links a{color:var(--lil);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.04em;transition:color .2s;}
+.nav-links{display:flex;align-items:center;gap:16px;}
+.nav-links a{color:var(--lil);text-decoration:none;font-size:.76rem;font-weight:500;letter-spacing:.04em;transition:color .2s;}
 .nav-links a:hover{color:#fff;}
 .nav-cta{background:rgba(255,255,255,.15);color:#fff !important;padding:7px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.25);font-weight:600 !important;transition:background .2s !important;}
 .nav-cta:hover{background:rgba(255,255,255,.25) !important;}
@@ -589,14 +701,17 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
 <!-- NAV -->
 <nav class="nav">
   <a class="nav-brand" href="index.html"><img src="img/psi.png" alt="Logotipo Ledesma Suarez" width="28" height="28"><span>Ledesma Suarez</span></a>
-  <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false" onclick="toggleMenu(this)">
+  <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="menu-principal">
     <a href="index.html">Início</a>
-    <a href="equipe.html">Conheça nossa equipe</a>
+    <a href="especialidades.html">Especialidades</a>
+    <a href="convenios.html">Convênios</a>
+    <a href="materiais.html">Materiais</a>
+    <a href="equipe.html">Equipe</a>
     <a href="blog.html">Publicações</a>
-    <a href="https://wa.me/5515998030909" target="_blank" rel="noopener" class="nav-cta">Agendar</a>
+    <a href="#pre-agendamento" class="nav-cta">Pré-agendar</a>
   </div>
 </nav>
 
@@ -654,18 +769,160 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
 
   <div class="div"></div>
 
+
+  <!-- GUIA RÁPIDO -->
+  <div class="section" id="guia-rapido">
+    <div class="section-head">
+      <div>
+        <p class="sec-lbl">Guia rápido</p>
+        <h2 class="section-title">Não sei qual profissional procurar</h2>
+      </div>
+      <a class="btn-secondary" href="#pre-agendamento">Responder pré-agendamento</a>
+    </div>
+    <p class="section-lead">Escolha a situação que mais se aproxima do que você está buscando. O resultado é apenas uma orientação inicial — a recepção confirma a especialidade mais adequada antes do agendamento.</p>
+    <div class="guide-box">
+      <div class="guide-options" role="tablist" aria-label="Demandas comuns">
+        <button class="guide-option active" type="button" data-guide-option="ansiedade"><strong>Ansiedade, tristeza ou estresse</strong><span>Crises, preocupação constante, desânimo, autoestima ou sobrecarga.</span></button>
+        <button class="guide-option" type="button" data-guide-option="infantil"><strong>Crianças e adolescentes</strong><span>Dificuldades escolares, comportamento, emoções, TDAH ou autismo.</span></button>
+        <button class="guide-option" type="button" data-guide-option="avaliacao"><strong>Avaliação neuropsicológica</strong><span>Atenção, memória, aprendizagem, laudo e investigação cognitiva.</span></button>
+        <button class="guide-option" type="button" data-guide-option="psiquiatria"><strong>Medicação ou diagnóstico psiquiátrico</strong><span>Necessidade de avaliação médica em saúde mental.</span></button>
+        <button class="guide-option" type="button" data-guide-option="casal"><strong>Relacionamento ou casal</strong><span>Conflitos, comunicação, acordos e reconstrução do vínculo.</span></button>
+        <button class="guide-option" type="button" data-guide-option="metabolico"><strong>Alimentação, peso ou hormônios</strong><span>Nutrição, crescimento, tireoide, diabetes e saúde metabólica.</span></button>
+      </div>
+      <div class="guide-result" aria-live="polite">
+        <div class="guide-kicker">Possível caminho</div>
+        <h3 id="guide-title">Psicologia</h3>
+        <p id="guide-text">A psicoterapia pode ajudar a compreender emoções, criar estratégias de enfrentamento e construir mudanças possíveis no dia a dia.</p>
+        <div class="guide-tags" id="guide-tags"><span>Psicoterapia individual</span><span>Adultos, adolescentes ou crianças</span></div>
+        <div class="btn-row">
+          <a class="btn-primary" id="guide-whatsapp" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20psicoterapia." target="_blank" rel="noopener">Conversar no WhatsApp</a>
+          <a class="btn-secondary" id="guide-page" href="especialidades/psicologia-sorocaba.html">Entender melhor</a>
+        </div>
+      </div>
+    </div>
+    <p class="soft-note">Este guia não realiza triagem clínica, diagnóstico ou indicação terapêutica definitiva. Em caso de risco imediato, procure emergência.</p>
+  </div>
+
+  <div class="div"></div>
+
   <!-- ESPECIALIDADES -->
   <div class="section" id="especialidades">
-    <p class="sec-lbl">Especialidades</p>
+    <div class="section-head">
+      <div>
+        <p class="sec-lbl">Especialidades</p>
+        <h2 class="section-title">Cuidado integrado em um só lugar</h2>
+      </div>
+      <a class="btn-secondary" href="especialidades.html">Ver página completa</a>
+    </div>
+    <p class="section-lead">Atendimento para crianças a partir dos 2 anos, adolescentes, adultos, idosos e casais, com possibilidade de encaminhamento interno entre as áreas quando necessário.</p>
     <div class="esplist">
-      <div class="espc"><div class="espe">🧠</div><div><h3>Psicoterapia Individual</h3><p>Adultos, adolescentes, idosos e crianças a partir dos 2 anos</p></div></div>
-      <div class="espc"><div class="espe">💑</div><div><h3>Terapia de Casal</h3><p>Suporte especializado em diferentes fases da relação</p></div></div>
-      <div class="espc"><div class="espe">🔬</div><div><h3>Avaliação Neuropsicológica</h3><p>Avaliações completas por neuropsicóloga especializada</p></div></div>
-      <div class="espc"><div class="espe">👶</div><div><h3>Psiquiatria Infantil</h3><p>Acompanhamento especializado para crianças e adolescentes</p></div></div>
-      <div class="espc"><div class="espe">🩺</div><div><h3>Psiquiatria Adulto</h3><p>Diagnóstico e tratamento de transtornos mentais</p></div></div>
-      <div class="espc"><div class="espe">🥗</div><div><h3>Nutrição</h3><p>Orientação nutricional personalizada para saúde e bem-estar</p></div></div>
-      <div class="espc"><div class="espe">🧬</div><div><h3>Endocrinologia Pediátrica</h3><p>Saúde hormonal e metabólica infantil</p></div></div>
-      <div class="espc"><div class="espe">⚕️</div><div><h3>Endocrinologia Adulto</h3><p>Diagnóstico e tratamento de doenças hormonais e metabólicas em adultos</p></div></div>
+      <div class="espc"><div class="espe">🧠</div><div><a href="especialidades/psicologia-sorocaba.html"><h3>Psicoterapia Individual</h3><p>Adultos, adolescentes, idosos e crianças a partir dos 2 anos</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">💑</div><div><a href="especialidades/terapia-de-casal-sorocaba.html"><h3>Terapia de Casal</h3><p>Suporte especializado em diferentes fases da relação</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">🔬</div><div><a href="especialidades/avaliacao-neuropsicologica-sorocaba.html"><h3>Avaliação Neuropsicológica</h3><p>Avaliações completas por neuropsicóloga especializada</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">👶</div><div><a href="especialidades/psiquiatria-sorocaba.html"><h3>Psiquiatria Infantil</h3><p>Acompanhamento médico especializado para crianças e adolescentes</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">🩺</div><div><a href="especialidades/psiquiatria-sorocaba.html"><h3>Psiquiatria Adulto</h3><p>Diagnóstico e tratamento de transtornos mentais</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">🥗</div><div><a href="especialidades/nutricao-sorocaba.html"><h3>Nutrição</h3><p>Orientação nutricional personalizada para saúde e bem-estar</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">🧬</div><div><a href="especialidades/endocrinologia-sorocaba.html"><h3>Endocrinologia Pediátrica</h3><p>Saúde hormonal, metabólica, crescimento e desenvolvimento</p><span class="mini-link">Saiba mais →</span></a></div></div>
+      <div class="espc"><div class="espe">⚕️</div><div><a href="especialidades/endocrinologia-sorocaba.html"><h3>Endocrinologia Adulto</h3><p>Diagnóstico e acompanhamento de doenças hormonais e metabólicas</p><span class="mini-link">Saiba mais →</span></a></div></div>
+    </div>
+    <div class="specialty-actions" aria-label="Agendamento por especialidade">
+      <a class="specialty-btn" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20psicoterapia." target="_blank" rel="noopener"><span>🧠</span>Agendar Psicoterapia</a>
+      <a class="specialty-btn" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20psiquiatria." target="_blank" rel="noopener"><span>🩺</span>Agendar Psiquiatria</a>
+      <a class="specialty-btn" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener"><span>🔬</span>Avaliação Neuropsicológica</a>
+      <a class="specialty-btn" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20nutri%C3%A7%C3%A3o." target="_blank" rel="noopener"><span>🥗</span>Agendar Nutrição</a>
+      <a class="specialty-btn" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20endocrinologia." target="_blank" rel="noopener"><span>🧬</span>Agendar Endocrinologia</a>
+      <a class="specialty-btn" href="https://wa.me/5515998030909?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20terapia%20de%20casal." target="_blank" rel="noopener"><span>💑</span>Terapia de Casal</a>
+      <a class="specialty-btn" href="#pre-agendamento"><span>📝</span>Pré-agendamento completo</a>
+      <a class="specialty-btn" href="convenios.html"><span>💳</span>Ver convênios</a>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+
+  <!-- PARA QUEM ATENDEMOS -->
+  <div class="section" id="para-quem">
+    <p class="sec-lbl">Para quem atendemos</p>
+    <h2 class="section-title">Cuidado para diferentes fases da vida</h2>
+    <p class="section-lead">Cada etapa tem demandas próprias. A clínica reúne profissionais para acolher crianças, adolescentes, adultos, idosos, casais e famílias com escuta, responsabilidade e clareza.</p>
+    <div class="cards-grid">
+      <article class="info-card"><div class="ico">🧸</div><h3>Crianças</h3><p>Psicoterapia infantil, orientação familiar, avaliação neuropsicológica, psiquiatria infantil e endocrinologia pediátrica.</p></article>
+      <article class="info-card"><div class="ico">🎒</div><h3>Adolescentes</h3><p>Apoio em ansiedade, autoestima, rotina escolar, convivência, TDAH, autismo, humor e mudanças corporais.</p></article>
+      <article class="info-card"><div class="ico">🌿</div><h3>Adultos</h3><p>Psicoterapia, psiquiatria, nutrição e endocrinologia para saúde mental, relacionamentos, trabalho e qualidade de vida.</p></article>
+      <article class="info-card"><div class="ico">🤝</div><h3>Casais</h3><p>Espaço para comunicação, conflitos, acordos, reconstrução de confiança e decisões importantes da relação.</p></article>
+      <article class="info-card"><div class="ico">👨‍👩‍👧</div><h3>Famílias</h3><p>Orientação para responsáveis, encaminhamentos internos e apoio quando a família precisa entender melhor uma demanda.</p></article>
+      <article class="info-card"><div class="ico">🧓</div><h3>Idosos</h3><p>Acompanhamento emocional, saúde mental, memória, rotina, alimentação, metabolismo e cuidado humanizado.</p></article>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- SINAIS DE ALERTA -->
+  <div class="section" id="sinais">
+    <p class="sec-lbl">Quando buscar ajuda</p>
+    <h2 class="section-title">Sinais de que pode ser hora de conversar com um profissional</h2>
+    <p class="section-lead">Os sinais abaixo não fecham diagnóstico. Eles ajudam a perceber quando vale procurar orientação para entender o que está acontecendo e planejar os próximos passos.</p>
+    <div class="signs-grid">
+      <article class="sign-card"><strong>Ansiedade frequente</strong><p>Preocupação intensa, crises, medo de situações cotidianas ou sensação constante de alerta.</p></article>
+      <article class="sign-card"><strong>Mudança de humor</strong><p>Tristeza persistente, irritabilidade, isolamento ou perda de interesse por atividades importantes.</p></article>
+      <article class="sign-card"><strong>Dificuldade escolar</strong><p>Queda de rendimento, desatenção, resistência para ir à escola ou dificuldades de aprendizagem.</p></article>
+      <article class="sign-card"><strong>Comportamento infantil</strong><p>Birras intensas, regressões, alterações de sono, medos ou mudanças bruscas no comportamento.</p></article>
+      <article class="sign-card"><strong>Concentração e rotina</strong><p>Esquecimentos, desorganização, impulsividade ou dificuldade de concluir tarefas.</p></article>
+      <article class="sign-card"><strong>Sono e apetite</strong><p>Alterações persistentes de sono, apetite, peso ou relação com alimentação.</p></article>
+      <article class="sign-card"><strong>Conflitos no casal</strong><p>Discussões repetidas, dificuldade de diálogo, afastamento ou decisões difíceis.</p></article>
+      <article class="sign-card"><strong>Hormônios e metabolismo</strong><p>Cansaço, alterações de crescimento, puberdade, tireoide, diabetes ou outros sintomas metabólicos.</p></article>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- PRIMEIRO ATENDIMENTO + ETAPAS -->
+  <div class="section" id="primeiro-atendimento">
+    <p class="sec-lbl">Primeiro atendimento</p>
+    <h2 class="section-title">Como funciona antes da primeira consulta</h2>
+    <p class="section-lead">A recepção ajuda a organizar informações, verificar disponibilidade e orientar sobre convênio, particular ou recibo para reembolso quando aplicável.</p>
+    <div class="process-grid">
+      <div class="process-list">
+        <h3>O que você pode informar</h3>
+        <ul>
+          <li>Nome, idade do paciente e melhor telefone para contato.</li>
+          <li>Especialidade desejada ou principal motivo da busca.</li>
+          <li>Se o atendimento será por convênio ou particular.</li>
+          <li>Preferência de período e disponibilidade de horários.</li>
+          <li>Se há encaminhamento médico, laudo ou relatório escolar.</li>
+        </ul>
+      </div>
+      <div class="process-list">
+        <h3>O que acontece depois</h3>
+        <ul>
+          <li>A recepção verifica a agenda e confirma dados do atendimento.</li>
+          <li>Quando necessário, orienta qual especialidade pode ser o melhor primeiro passo.</li>
+          <li>Em atendimentos infantis, os responsáveis recebem orientações sobre presença e documentos.</li>
+          <li>Após a primeira consulta, o profissional indica continuidade ou encaminhamentos internos.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline" aria-label="Linha do tempo do atendimento" style="margin-top:18px;">
+      <article class="step"><h3>Contato inicial</h3><p>Você chama pelo WhatsApp, telefone ou formulário de pré-agendamento.</p></article>
+      <article class="step"><h3>Entendimento da demanda</h3><p>A recepção identifica especialidade, idade, convênio e objetivo principal.</p></article>
+      <article class="step"><h3>Indicação do caminho</h3><p>Quando houver dúvida, orientamos qual área pode ser o primeiro passo.</p></article>
+      <article class="step"><h3>Confirmação</h3><p>São combinados data, horário, profissional e forma de atendimento.</p></article>
+      <article class="step"><h3>Primeira consulta</h3><p>O profissional acolhe a história e define possibilidades de cuidado.</p></article>
+      <article class="step"><h3>Continuidade</h3><p>Se necessário, há encaminhamento interno para outra especialidade.</p></article>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- EQUIPE MULTIDISCIPLINAR -->
+  <div class="section" id="multidisciplinar">
+    <p class="sec-lbl">Equipe multidisciplinar</p>
+    <h2 class="section-title">Especialidades que podem conversar entre si</h2>
+    <p class="section-lead">Em alguns casos, saúde mental, aprendizagem, alimentação e saúde hormonal se relacionam. Ter diferentes especialidades no mesmo espaço facilita encaminhamentos e torna o cuidado mais organizado, sempre respeitando a privacidade e a necessidade de cada paciente.</p>
+    <div class="cards-grid">
+      <article class="info-card"><div class="ico">🧩</div><h3>Crianças e desenvolvimento</h3><p>Psicologia, neuropsicologia, psiquiatria infantil e endocrinologia pediátrica podem atuar de forma complementar quando indicado.</p></article>
+      <article class="info-card"><div class="ico">🧭</div><h3>Adultos e rotina</h3><p>Ansiedade, TDAH, sono, alimentação e metabolismo podem exigir olhares diferentes para um plano mais completo.</p></article>
+      <article class="info-card"><div class="ico">📌</div><h3>Encaminhamento responsável</h3><p>O encaminhamento acontece apenas quando faz sentido para o caso e com ciência do paciente ou responsáveis.</p></article>
     </div>
   </div>
 
@@ -701,6 +958,10 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
           <img class="js-ampliar-foto" src="img/espaco2.jpg" alt="Sala de atendimento psicológico da clínica" width="400" height="300" loading="lazy" decoding="async">
           <img class="js-ampliar-foto" src="img/espaco3.jpg" alt="Corredor e salas de atendimento da clínica" width="400" height="300" loading="lazy" decoding="async">
           <img class="js-ampliar-foto" src="img/espaco4.jpg" alt="Espaço de recepção e espera da Clínica Ledesma Suarez" width="400" height="300" loading="lazy" decoding="async">
+        </div>
+        <p class="gallery-caption">Clique nas fotos para ampliar e conhecer melhor o ambiente antes da primeira visita.</p>
+        <div class="tour-card">
+          <p><strong>Tour visual da clínica:</strong> recepção, salas e ambientes foram pensados para acolher crianças, adolescentes e adultos com conforto, privacidade e organização.</p>
         </div>
         <a class="insta" href="https://instagram.com/clinicaledesmasuarez" target="_blank" rel="noopener">📷 &nbsp;@clinicaledesmasuarez</a>
       </div>
@@ -785,6 +1046,80 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
 
   <div class="div"></div>
 
+
+  <!-- MATERIAIS GRATUITOS -->
+  <div class="section" id="materiais">
+    <div class="section-head">
+      <div>
+        <p class="sec-lbl">Materiais gratuitos</p>
+        <h2 class="section-title">Guias rápidos para baixar</h2>
+      </div>
+      <a class="btn-secondary" href="materiais.html">Ver todos os materiais</a>
+    </div>
+    <p class="section-lead">Conteúdos educativos para organizar dúvidas antes de procurar atendimento. Eles não substituem uma avaliação profissional.</p>
+    <div class="material-grid">
+      <a class="material-card" href="downloads/guia-primeira-consulta.txt" download><div class="ico">📝</div><h3>Preparar a primeira consulta</h3><p>O que levar, como organizar dúvidas e informações importantes.</p><span>Baixar .txt</span></a>
+      <a class="material-card" href="downloads/checklist-desenvolvimento-infantil.txt" download><div class="ico">🧸</div><h3>Sinais no desenvolvimento infantil</h3><p>Checklist de observação para pais e responsáveis.</p><span>Baixar .txt</span></a>
+      <a class="material-card" href="downloads/avaliacao-neuropsicologica.txt" download><div class="ico">🔬</div><h3>Avaliação neuropsicológica</h3><p>Quando considerar e quais documentos ajudam.</p><span>Baixar .txt</span></a>
+      <a class="material-card" href="downloads/rotina-tdah.txt" download><div class="ico">⏱️</div><h3>Rotina para TDAH</h3><p>Estratégias simples para retomar organização no dia a dia.</p><span>Baixar .txt</span></a>
+      <a class="material-card" href="downloads/ansiedade-quando-buscar-ajuda.txt" download><div class="ico">🌿</div><h3>Ansiedade: quando buscar ajuda</h3><p>Sinais de atenção e como conversar sobre o tema.</p><span>Baixar .txt</span></a>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- PRÉ-AGENDAMENTO -->
+  <div class="section" id="pre-agendamento">
+    <p class="sec-lbl">Pré-agendamento</p>
+    <h2 class="section-title">Envie as informações principais pelo WhatsApp</h2>
+    <p class="section-lead">Preencha o formulário e clique em enviar. O site abre o WhatsApp com a mensagem pronta para a recepção — sem armazenar dados no site.</p>
+    <form class="pre-card" id="preAgendamentoForm">
+      <div class="pre-grid">
+        <div class="field"><label for="preNome">Nome</label><input id="preNome" name="nome" autocomplete="name" required placeholder="Seu nome"></div>
+        <div class="field"><label for="preTelefone">WhatsApp</label><input id="preTelefone" name="telefone" autocomplete="tel" placeholder="(15) 99999-9999"></div>
+        <div class="field"><label for="preEspecialidade">Especialidade</label><select id="preEspecialidade" name="especialidade" required><option value="">Selecione</option><option>Não sei qual profissional procurar</option><option>Psicoterapia Individual</option><option>Terapia de Casal</option><option>Avaliação Neuropsicológica</option><option>Psiquiatria Infantil</option><option>Psiquiatria Adulto</option><option>Nutrição</option><option>Endocrinologia Pediátrica</option><option>Endocrinologia Adulto</option></select></div>
+        <div class="field"><label for="preConvenio">Convênio/particular</label><select id="preConvenio" name="convenio"><option value="">Selecione</option><option>Particular</option><option>Eva Saúde</option><option>Hapvida</option><option>Amil</option><option>Funserv</option><option>Unimed</option><option>SulAmérica</option><option>Ossel</option><option>Ofebas</option><option>Quero confirmar cobertura</option></select></div>
+        <div class="field"><label for="prePeriodo">Melhor período</label><select id="prePeriodo" name="periodo"><option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Noite</option><option>Sábado de manhã</option><option>Sou flexível</option></select></div>
+        <div class="field"><label for="preIdade">Idade do paciente</label><input id="preIdade" name="idade" inputmode="numeric" placeholder="Ex.: 8 anos, 34 anos"></div>
+        <div class="field full"><label for="preMensagem">Mensagem</label><textarea id="preMensagem" name="mensagem" placeholder="Conte brevemente o motivo da busca, se desejar."></textarea></div>
+      </div>
+      <div class="form-foot">
+        <p>Ao enviar, você será direcionado ao WhatsApp. Evite incluir informações sensíveis em excesso; a recepção orientará os próximos passos.</p>
+        <button class="form-btn" type="submit">Enviar pelo WhatsApp</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- DÚVIDAS RÁPIDAS -->
+  <div class="section" id="duvidas-rapidas">
+    <p class="sec-lbl">Dúvidas rápidas</p>
+    <div class="quick-grid">
+      <div class="quick-card"><strong>Atende convênio?</strong><p>Sim. A cobertura depende do plano e da especialidade. A recepção confirma antes do agendamento.</p></div>
+      <div class="quick-card"><strong>Atende crianças?</strong><p>Sim, a partir dos 2 anos em psicoterapia, além de psiquiatria infantil e endocrinologia pediátrica.</p></div>
+      <div class="quick-card"><strong>Precisa de encaminhamento?</strong><p>Nem sempre. Alguns convênios ou especialidades podem exigir documentação específica.</p></div>
+      <div class="quick-card"><strong>Emite recibo?</strong><p>Para atendimentos particulares, consulte a recepção sobre recibo e dados necessários para reembolso.</p></div>
+      <div class="quick-card"><strong>Atende sábado?</strong><p>Sim. O horário de sábado é das 7h30 às 12h30, conforme agenda disponível.</p></div>
+      <div class="quick-card"><strong>Tem avaliação neuropsicológica?</strong><p>Sim. O processo é estruturado em sessões e gera laudo ao final.</p></div>
+      <div class="quick-card"><strong>Como chegar?</strong><p>A clínica fica no Jardim Faculdade, em Sorocaba, na Rua Capitão Alfredo Cardoso, 34.</p></div>
+      <div class="quick-card"><strong>Particular ou convênio?</strong><p>Há atendimento particular e por convênio. Você pode informar sua preferência no pré-agendamento.</p></div>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- ATENÇÃO EM SAÚDE MENTAL -->
+  <div class="section" id="emergencia">
+    <p class="sec-lbl">Atenção</p>
+    <div class="emergency-box">
+      <h3>Este site não realiza atendimento emergencial</h3>
+      <p>Em situação de risco imediato, ideação suicida com plano, violência, surto, intoxicação ou emergência médica, procure o pronto atendimento mais próximo, acione o <strong>SAMU 192</strong> ou ligue para o <strong>CVV 188</strong>. O WhatsApp da clínica é destinado a agendamentos e orientações administrativas.</p>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
   <!-- ═══ PERGUNTAS FREQUENTES ═══ -->
   <div class="section" id="faq">
     <p class="sec-lbl">Perguntas Frequentes</p>
@@ -834,16 +1169,6 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
 
   <div class="div"></div>
 
-  <!-- ═══ AVALIAÇÕES GOOGLE ═══ -->
-  <div class="section">
-    <p class="sec-lbl">O que dizem nossos pacientes</p>
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-f13f6ca0-d3ba-4b77-9ab0-106489876678" data-elfsight-app-lazy></div>
-  </div>
-
-  <div class="div"></div>
-
-
   <!-- ═══ MAPA ═══ -->
   <div class="section" id="como-chegar">
     <p class="sec-lbl">Como chegar</p>
@@ -874,7 +1199,7 @@ footer{margin-top:52px;padding:48px 8% 60px;background:linear-gradient(135deg,va
     <p>Centro de Saúde e Desenvolvimento<br>Sorocaba – SP · Desde 2023</p>
   </div>
   <div class="footer-right">
-    <p>Rua Cap. Alfredo Cardoso, 34<br>Jd. Faculdade · CEP 18.030-310<br>(15) 99803-0909<br><span class="heart">♥</span> com responsabilidade e acolhimento</p>
+    <p>Rua Cap. Alfredo Cardoso, 34<br>Jd. Faculdade · CEP 18.030-310<br>(15) 99803-0909<br><a href="especialidades.html" style="color:var(--lils);">Especialidades</a> · <a href="convenios.html" style="color:var(--lils);">Convênios</a> · <a href="materiais.html" style="color:var(--lils);">Materiais</a><br><span class="heart">♥</span> com responsabilidade e acolhimento</p>
   </div>
 </footer>
 
@@ -899,14 +1224,6 @@ function toggleMenu(button){
   button.setAttribute('aria-label',isOpen?'Fechar menu':'Abrir menu');
 }
 
-/* Acordeão das perguntas frequentes */
-document.querySelectorAll('.faq-q').forEach(function(q){
-  q.addEventListener('click',function(){
-    var item=q.parentElement;
-    var aberto=item.classList.toggle('open');
-    q.setAttribute('aria-expanded',aberto);
-  });
-});
 /* Rastreia cliques em WhatsApp como evento de conversão */
 document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
   a.addEventListener('click',function(){
