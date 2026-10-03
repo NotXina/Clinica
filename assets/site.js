@@ -173,6 +173,110 @@
     });
   }
 
+
+
+  /* Guia rápido: "não sei qual profissional procurar" */
+  var guideData = {
+    ansiedade: {
+      title: 'Psicologia',
+      text: 'A psicoterapia pode ajudar a compreender emoções, criar estratégias de enfrentamento e construir mudanças possíveis no dia a dia.',
+      tags: ['Psicoterapia individual', 'Adultos, adolescentes ou crianças'],
+      page: 'especialidades/psicologia-sorocaba.html',
+      whats: 'Olá, gostaria de orientação sobre psicoterapia.'
+    },
+    infantil: {
+      title: 'Psicologia infantil, Psiquiatria infantil ou Neuropsicologia',
+      text: 'Quando a demanda envolve comportamento, escola, emoções, TDAH ou autismo, a recepção ajuda a identificar o melhor primeiro passo para a criança ou adolescente.',
+      tags: ['Crianças e adolescentes', 'Orientação familiar', 'Encaminhamento interno'],
+      page: 'especialidades/psicologia-sorocaba.html',
+      whats: 'Olá, gostaria de orientação para atendimento infantil ou adolescente.'
+    },
+    avaliacao: {
+      title: 'Avaliação Neuropsicológica',
+      text: 'Indicada para investigar funções como atenção, memória, aprendizagem, linguagem e funções executivas, com processo estruturado e laudo ao final.',
+      tags: ['Atenção e aprendizagem', 'Laudo neuropsicológico', 'Processo em etapas'],
+      page: 'especialidades/avaliacao-neuropsicologica-sorocaba.html',
+      whats: 'Olá, gostaria de informações sobre avaliação neuropsicológica.'
+    },
+    psiquiatria: {
+      title: 'Psiquiatria',
+      text: 'A psiquiatria realiza avaliação médica em saúde mental, diagnóstico, acompanhamento e, quando indicado, tratamento medicamentoso.',
+      tags: ['Adulto ou infantil', 'Avaliação médica', 'Acompanhamento'],
+      page: 'especialidades/psiquiatria-sorocaba.html',
+      whats: 'Olá, gostaria de informações sobre psiquiatria.'
+    },
+    casal: {
+      title: 'Terapia de Casal',
+      text: 'Um espaço para trabalhar comunicação, conflitos, acordos, decisões importantes e reconstrução do vínculo com apoio profissional.',
+      tags: ['Relacionamento', 'Comunicação', 'Acordos'],
+      page: 'especialidades/terapia-de-casal-sorocaba.html',
+      whats: 'Olá, gostaria de informações sobre terapia de casal.'
+    },
+    metabolico: {
+      title: 'Nutrição ou Endocrinologia',
+      text: 'Para questões de alimentação, peso, crescimento, puberdade, tireoide, diabetes e saúde metabólica, a recepção orienta entre nutrição e endocrinologia.',
+      tags: ['Nutrição', 'Endocrinologia adulto e pediátrica', 'Saúde metabólica'],
+      page: 'especialidades/endocrinologia-sorocaba.html',
+      whats: 'Olá, gostaria de orientação sobre nutrição ou endocrinologia.'
+    }
+  };
+
+  function setGuide(option) {
+    var data = guideData[option];
+    if (!data) return;
+    var title = document.getElementById('guide-title');
+    var text = document.getElementById('guide-text');
+    var tags = document.getElementById('guide-tags');
+    var page = document.getElementById('guide-page');
+    var wa = document.getElementById('guide-whatsapp');
+    if (title) title.textContent = data.title;
+    if (text) text.textContent = data.text;
+    if (tags) {
+      tags.innerHTML = '';
+      data.tags.forEach(function (tag) {
+        var span = document.createElement('span');
+        span.textContent = tag;
+        tags.appendChild(span);
+      });
+    }
+    if (page) page.href = data.page;
+    if (wa) wa.href = 'https://wa.me/5515998030909?text=' + encodeURIComponent(data.whats);
+  }
+
+  document.querySelectorAll('[data-guide-option]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('[data-guide-option]').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      setGuide(btn.getAttribute('data-guide-option'));
+    });
+  });
+
+  /* Pré-agendamento: monta mensagem e abre WhatsApp, sem armazenar dados */
+  var preForm = document.getElementById('preAgendamentoForm');
+  if (preForm) {
+    preForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var get = function (id) {
+        var el = document.getElementById(id);
+        return el ? el.value.trim() : '';
+      };
+      var linhas = [
+        'Olá, gostaria de fazer um pré-agendamento pela Clínica Ledesma Suarez.',
+        '',
+        'Nome: ' + get('preNome'),
+        'WhatsApp: ' + (get('preTelefone') || 'não informado'),
+        'Idade do paciente: ' + (get('preIdade') || 'não informada'),
+        'Especialidade: ' + get('preEspecialidade'),
+        'Convênio/particular: ' + (get('preConvenio') || 'não informado'),
+        'Melhor período: ' + (get('prePeriodo') || 'não informado')
+      ];
+      var msg = get('preMensagem');
+      if (msg) linhas.push('Mensagem: ' + msg);
+      linhas.push('', 'Enviado pelo site.');
+      window.open('https://wa.me/5515998030909?text=' + encodeURIComponent(linhas.join('\n')), '_blank', 'noopener');
+    });
+  }
+
   /* Perguntas frequentes (acordeão) */
   document.querySelectorAll('.faq-q').forEach(function (q) {
     q.addEventListener('click', function () {
